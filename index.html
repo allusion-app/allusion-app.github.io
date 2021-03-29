@@ -1,3 +1,160 @@
-<body>
-Hello world!
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Allusion is a tool built for artists, aimed to help you organize your Visual Library – A single place that
+    contains your entire collection of references, inspirations and any other kinds of images."
+    />
+    <title>Allusion - Visual Library Manager</title>
+    <link rel="stylesheet" href="res/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section id="introduction">
+      <div class="content">
+        <div class="flexRow stdMargin">
+          <img src="res/img/logo.svg" style="height: 1.5rem; margin: 0 1rem 0 0.5rem" alt="Allusion App Logo - Black" />
+          <h2>Allusion</h2>
+        </div>
+        <h1 class="stdMargin">Never loose another reference.</h1>
+        <p class="stdMargin">
+          Allusion is a tool built for artists, aimed to help you organize your Visual Library – A single place that
+          contains your entire collection of references, inspirations and any other kinds of images.
+        </p>
+        <div class="flexRow stdMargin">
+          <button class="stdBtn light" style="margin-right: 1rem" onclick="window.location.href='#features'">
+            Learn More
+          </button>
+          <button class="stdBtn strong" onclick="window.location.href='#download'">Get Allusion</button>
+        </div>
+        <a class="stdMargin" href="#message"
+          >Scroll down to learn more <i class="fas fa-caret-down" style="margin-left: 0.25rem"></i
+        ></a>
+      </div>
+    </section>
+
+    <section id="message" class="bgGrad">
+      <div class="content">
+        <i class="fas fa-info-circle"></i>
+        <div class="text">
+          <h3 class="alt stdMargin">Allusion and PureRef in Harmony</h3>
+          <p class="alt stdMargin">
+            We understand that artists like to use <a class="alt" href="https://www.pureref.com/">PureRef</a>. Allusion
+            focuses on managing your image library, while PureRef is typically used on a project basis. Our application
+            was designed to be a complimentary tool to PureRef by supporting easy drag and drop between the
+            applications.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="content">
+        <div class="card">
+          <h3><i class="fas fa-folder-open"></i>Watched Folders</h3>
+          <img src="res/img/03.svg" alt="Allusion – Watched Folders Feature Illustration" />
+          <p>
+            Allusion uses watched folders to access your library. Select any folder and all images inside will appear in
+            Allusion. You can add and remove images from your folder without any additional steps. Your data always
+            remains in your hands.
+          </p>
+        </div>
+        <div class="card">
+          <h3><i class="fas fa-sitemap"></i>Tag Hierarchy</h3>
+          <img src="res/img/02.svg" alt="Allusion – Tag Hierarchy Feature Illustration" />
+          <p>
+            Tags are a convinient tool to manage image libraries. Allusion builds upon this strength by allowing
+            hierarchical tag structures. Organizing tags in this way gives more control and a better overview.
+          </p>
+        </div>
+        <div class="card">
+          <h3><i class="fas fa-search"></i>Search</h3>
+          <img src="res/img/01.svg" alt="Allusion – Search Feature Illustration" />
+          <p>
+            With Allusion you can easily find any image based on various criteria. You can filter according to source
+            folders, tags as well as other meta data. You can even combine multiple queries with the advanced search
+            inteface.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="download" class="bgGrad">
+      <div class="content">
+        <i class="fas fa-download"></i>
+        <div class="text">
+          <h3 class="alt stdMargin">Get Allusion</h3>
+          <p class="alt stdMargin">
+            Allusion is available for Windows and MacOS. Your can download it by using the links below.<br />
+            <strong>Note:</strong> We are currently conduction closed alpha testing. Public relases will be available
+            soon! Thank you for your interest!
+          </p>
+          <div class="flexRow">
+            <button class="stdBtn disabled">Allusion for Windows</button>
+            <button class="stdBtn disabled">Allusion for MacOS</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="content">
+        <h3 class="stdMargin">Meet the Team!</h3>
+        <div class="cardWrapper stdMargin">
+          <a href="https://twitter.com/dani_kreuter">
+            <div class="card">
+              <i class="fas fa-tasks"></i>
+              <h4>Daniel</h4>
+              <p>Planner</p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="card">
+              <i class="fas fa-code"></i>
+              <h4>Remi</h4>
+              <p>Developer</p>
+            </div>
+          </a>
+          <div class="break"></div>
+          <!-- break -->
+          <a href="#">
+            <div class="card">
+              <i class="fas fa-vector-square"></i>
+              <h4>Rombout</h4>
+              <p>UI Designer</p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="card">
+              <i class="fas fa-code-branch"></i>
+              <h4>Chi</h4>
+              <p>Developer</p>
+            </div>
+          </a>
+        </div>
+        <div class="text stdMargin">
+          <p>You can also contact us thorugh:</p>
+          <a href="#">allusion.app@gmail.com</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <a href="#introduction">
+        <div class="content">
+          <img src="res/img/logoAlt.svg" alt="Allusion App Logo - White" />
+          <span id="brandname">Allusion</span>
+        </div>
+      </a>
+    </footer>
+  </body>
+</html>
