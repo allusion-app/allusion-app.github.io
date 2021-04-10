@@ -12,9 +12,9 @@
 	.st6{fill:#1473E6;}
 	.st7{fill:#C8C8C8;}
 	.st8{fill:none;}
-	.st9{font-family:'ArialMT';}
+	.st9{font-family:'Arial';}
 	.st10{font-size:29.7321px;}
-	.st11{font-family:'Arial-BoldMT';}
+	.st11{font-family:'Arial';font-weight:700;}
 	.st12{fill:#FF6157;}
 	.st13{fill:#FFC12F;}
 </style>
