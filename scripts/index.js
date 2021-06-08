@@ -31,13 +31,10 @@ async function setDownloadLinks() {
         if (asset.content_type.startsWith('application') && asset.name.startsWith('Allusion-')) {
             if (asset.name.endsWith('.exe')) {
                 windowsDownloadLink.href = asset.browser_download_url;
-                console.log(asset.browser_download_url)
             } else if (asset.name.endsWith('.dmg')) {
                 macDownloadLink.href = asset.browser_download_url;
-                console.log(asset.browser_download_url)
             } else if (asset.name.endsWith('.AppImage')) {
                 linuxDownloadLink.href = asset.browser_download_url;
-                console.log(asset.browser_download_url, linuxDownloadLink)
             }
         }
     }
