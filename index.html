@@ -10,6 +10,9 @@
       content="Allusion is a tool built for artists, aimed to help you organize your Visual Library – A single place that
     contains your entire collection of references, inspiration and any other kinds of images."
     />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'; img-src 'self'; style-src 'self' https://use.fontawesome.com https://fonts.googleapis.com 'unsafe-inline'" />
+    <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin" />
+    <meta http-equiv="Cross-Origin-Embedder-Policy" content="require-corp" />
     <link rel="shortcut icon" type="image/jpg" href="res/img/favicon.png" />
     <title>Allusion - Visual Library Manager</title>
     <link rel="stylesheet" href="res/css/style.css" />
@@ -19,19 +22,6 @@
       integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
       crossorigin="anonymous"
     />
-    <script>
-      window.onload = function() {
-        // Highlight download button for user's platform
-        var os = undefined;
-        if (navigator.appVersion.indexOf('Win')   !== -1) os='windows';
-        if (navigator.appVersion.indexOf('Mac')   !== -1) os='mac';
-        if (navigator.appVersion.indexOf('Linux') !== -1) os='linux';
-        var buttonElem = document.getElementById('download-' + os);
-        if (buttonElem) {
-          buttonElem.classList.add('strong');
-        }
-      }
-    </script>
   </head>
   <body>
     <section id="introduction">
@@ -111,14 +101,14 @@
             Allusion is available for Windows, MacOS and Linux. Your can download it through the links below.
           </p>
           <div class="flexRow">
-            <a href="https://github.com/allusion-app/Allusion/releases/download/v1.0.0-rc4/Allusion-Setup-1.0.0-rc4.exe">
-              <button class="stdBtn" id="download-windows">Allusion for Windows</button>
+            <a class="stdBtn" id="download-windows" href="https://github.com/allusion-app/Allusion/releases/latest">
+              Allusion for Windows
             </a>
-            <a href="https://github.com/allusion-app/Allusion/releases/download/v1.0.0-rc4/Allusion-1.0.0-rc4.dmg">
-              <button class="stdBtn" id="download-mac">Allusion for MacOS</button>
+            <a class="stdBtn" id="download-mac" href="https://github.com/allusion-app/Allusion/releases/latest">
+              Allusion for MacOS
             </a>
-            <a href="https://github.com/allusion-app/Allusion/releases/download/v1.0.0-rc4/Allusion-1.0.0-rc4.AppImage">
-              <button class="stdBtn" id="download-linux">Allusion for Linux</button>
+            <a class="stdBtn" id="download-linux" href="https://github.com/allusion-app/Allusion/releases/latest">
+              Allusion for Linux
             </a>
           </div>
         </div>
@@ -179,5 +169,7 @@
         </div>
       </a>
     </footer>
+
+    <script src="scripts/index.js"></script>
   </body>
 </html>
