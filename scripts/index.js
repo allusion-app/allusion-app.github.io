@@ -8,12 +8,17 @@ setDownloadLinks();
 // Highlight download button for user's platform
 function highlightOSButton() {
     var ua = navigator.userAgent;
+    var link;
     if (ua.indexOf('Win') !== -1) {
-        windowsDownloadLink.classList.add('strong');
+        link = windowsDownloadLink;
     } else if (ua.indexOf('Mac') !== -1) {
-        macDownloadLink.classList.add('strong');
+        link = macDownloadLink;
     } else if (ua.indexOf('Linux') !== -1) {
-        linuxDownloadLink.classList.add('strong');
+        link = linuxDownloadLink.classList;
+    }
+    if (link) {
+        link.classList.remove('alt');
+        link.classList.add('strong');
     }
 }
 

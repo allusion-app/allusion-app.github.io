@@ -39,24 +39,25 @@ p {
   padding: 0;
   margin: 0;
 }
-p.alt {
-  color: #fff;
-}
 
 a {
-  text-decoration: none;
   color: #1473e6;
   font-weight: 600;
   padding: 0;
   margin: 0;
-}
-a.alt {
-  color: #7af2a6;
+  text-underline-offset: 0.125rem;
 }
 a:hover {
   color: #489aff;
 }
 a.alt:hover {
+  color: #7af2a6;
+}
+a.stdBtn, a.card, header a, footer a {
+  text-decoration: none;
+}
+
+.alt {
   color: #fff;
 }
 
@@ -86,9 +87,6 @@ h3 {
   padding: 0;
   margin: 0;
 }
-h3.alt {
-  color: #fff;
-}
 
 h4 {
   font-size: 1rem;
@@ -100,8 +98,6 @@ h4 {
 /* COMPONENTS */
 
 .stdBtn {
-  background-color: #f0f0f0;
-  color: black;
   box-sizing: border-box;
   font-size: 0.875rem;
   cursor: pointer;
