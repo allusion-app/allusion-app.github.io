@@ -61,22 +61,22 @@ a.stdBtn, a.card, header a, footer a {
   color: #fff;
 }
 
-h1 {
-  font-size: 2.5rem;
-  font-weight: 900;
-  line-height: 1;
-  color: #222;
-  padding: 0;
-  margin: 0;
-}
-
-h2 {
+#title {
   font-size: 2rem;
   line-height: 1;
   font-weight: 900;
   color: #000;
   padding: 0;
   margin: 0;
+}
+
+#subTitle {
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1;
+  color: #222;
+  padding: 0;
+  margin: 1rem;
 }
 
 h3 {
