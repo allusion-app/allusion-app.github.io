@@ -14,7 +14,7 @@ function highlightOSButton() {
     } else if (ua.indexOf('Mac') !== -1) {
         link = macDownloadLink;
     } else if (ua.indexOf('Linux') !== -1) {
-        link = linuxDownloadLink.classList;
+        link = linuxDownloadLink;
     }
     if (link) {
         link.classList.remove('alt');
