@@ -194,8 +194,7 @@ h4 {
   background-size: 50%;
   background-position: 95% 70%;
   background-repeat: no-repeat;
-  height: 95vh;
-  min-height: 35rem;
+  min-height: 95vh;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
