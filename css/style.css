@@ -10,7 +10,7 @@
   font-display: swap;
   src:
     local("Source Sans Pro"),
-    url(../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf) format('ttf');
+    url(../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf) format("truetype");
 }
 
 @font-face {
@@ -19,7 +19,7 @@
   font-display: swap;
   src:
     local("Source Sans Pro Semibold"),
-    url(../fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf) format('ttf');
+    url(../fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf) format("truetype");
 }
 
 @font-face {
@@ -28,7 +28,7 @@
   font-display: swap;
   src:
     local("Source Sans Pro Black"),
-    url(../fonts/Source_Sans_Pro/SourceSansPro-Black.ttf) format('ttf');
+    url(../fonts/Source_Sans_Pro/SourceSansPro-Black.ttf) format("truetype");
 }
 
 * {
