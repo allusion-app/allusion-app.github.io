@@ -4,6 +4,33 @@
 
 /*********************************/
 
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local("Source Sans Pro"),
+    url(../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 600;
+  font-display: swap;
+  src:
+    local("Source Sans Pro Semibold"),
+    url(../fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 900;
+  font-display: swap;
+  src:
+    local("Source Sans Pro Black"),
+    url(../fonts/Source_Sans_Pro/SourceSansPro-Black.ttf) format('ttf');
+}
+
 * {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
