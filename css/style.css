@@ -134,11 +134,6 @@ h4 {
   border: 0.0625rem solid transparent;
   transition: background 0.25s ease;
 }
-.stdBtn.light {
-  color: #222;
-  background: #ddd;
-  border: 0.125rem solid #ccc;
-}
 .stdBtn.strong {
   color: #fff;
   background: #1473e6;
@@ -150,18 +145,6 @@ h4 {
   background: #fff;
   border: 0.125rem solid #fff;
   transition: none;
-}
-.stdBtn.disabled {
-  font-weight: 600;
-  color: #ccc;
-  background: #fff;
-  border: 0.125rem solid #fff;
-  transition: none;
-  cursor: not-allowed;
-}
-
-.stdBtn.light:hover {
-  background: #ccc;
 }
 .stdBtn.strong:hover {
   background: #0c65d3;
