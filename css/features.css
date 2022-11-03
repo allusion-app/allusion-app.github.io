@@ -1,0 +1,114 @@
+#features h1 {
+  padding-bottom: 2rem;
+  color: #ffffff;
+}
+
+#features h2 {
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: #666666;
+  font-weight: 600;
+}
+
+#features .active h2 {
+  color: #ffffff;
+}
+
+#features p {
+  color: #666666;
+}
+
+#features .active p {
+  color: #bbbbbb;
+}
+
+#features .page {
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+#features .placement {
+  width: 80rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#features .text_frame {
+  flex: 0 0 30rem;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+#features .image_frame {
+  flex: 1 0 40rem;
+  padding: 2rem;
+}
+
+#features .image_bg {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+#features .image_frame img {
+  width: 100%;
+}
+
+#features .fContent {
+  display: flex;
+}
+
+#features .scroll_track {
+  position: relative;
+  flex: 0 0 0.3rem;
+  background-color: rgb(68, 68, 68);
+  border-radius: 0.15rem;
+}
+
+#features .scroll_thumb {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 350px;
+  background-color: #56c7df;
+  border-radius: 0.15rem;
+}
+
+#features .fList {
+  width: 100%;
+  flex: 1 0 auto;
+  padding: 0 1rem;
+}
+
+#features .fListElement {
+  margin-bottom: 1rem;
+}
+
+#features .fList .header {
+  display: flex;
+  align-items: center;
+}
+
+#features .icon {
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+#features .icon svg {
+  width: 4rem;
+  fill: #666666;
+}
+
+#features .active .icon svg {
+  width: 4rem;
+  fill: #56c7df;
+}
