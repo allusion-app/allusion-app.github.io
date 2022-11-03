@@ -1,296 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="google-site-verification" content="NX7X02kx6tu9ZKTAyUrIkQKxiKwKtXMyHMFFbn7E54U" />
-    <meta
-      name="description"
-      content="Allusion is a tool built for artists, aimed to help you organize your Visual Library – A single place that
-    contains your entire collection of references, inspiration and any other kinds of images."
-    />
-    
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/icon.svg" type="image/svg+xml">
-    <title>Allusion - Visual Library Manager</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    
-    <div div id="wrapper">
-    <!-- Allusion logo -->
-    <header id="navbar"> 
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="NX7X02kx6tu9ZKTAyUrIkQKxiKwKtXMyHMFFbn7E54U" />
+  <meta name="description" content="Allusion is a tool built for artists, aimed to help you organize your Visual Library – A single place that
+      contains your entire collection of references, inspiration and any other kinds of images." />
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/icon.svg" type="image/svg+xml">
+  <title>Allusion - Visual Library Manager</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+</head>
+
+<body>
+
+  <!-- Allusion logo -->
+
+  <header id="navbar">
     <div class="navbar" href="index.html">
-      <img src="img/logo.png" alt="" /><span>
-        Allusion
-      </span>
+      <img src="img/logo.png" alt="" />
+      <span>Allusion</span>
     </div>
   </header>
-    
-
-    <header id="introduction">
-      
-        <div class="parent">
-          <div class="div1"> <p id="title">Unleash your </p><p id="subTitle"> Creativity</p></div>
-          <div class="div2"> <p class="stdMargin">
-           <h5 id="paragraph">Never lose another reference.
-            Allusion helps artists manage their collections of reference images and inspirations.</h5> 
-          </p> </div>
-
-          <div class="div3"><a class="stdBtn strong stdMargin" href="#download">Get Allusion</a></div>
-          <div class="div3-2"> <a href="#" class="round-button"><i class="fa fa-play fa-2x"></i></a></div> 
-          <div class="div4" > 
-            <!--Placeholder image instead of 3D scene r-->
-               <img src="img/hero.png">
-            </div>
-          </div>
-        
-        
-        
-          <div class="background">
-            </div>
-      
-    </header>
-
-  </div>
 
 
+  <section id="introduction">
 
-    <section id="features">
-      <!--Each big section has 3 subsections for each feature-->
-      <section id="tag_features">
+    <div class="parent">
+      <div class="div1">
+        <p id="title">Unleash your </p>
+        <p id="subTitle"> Creativity</p>
+      </div>
+      <div class="div2">
+        <p class="stdMargin">
+        <h5 id="paragraph">Never lose another reference.
+          Allusion helps artists manage their collections of reference images and inspirations.</h5>
+        </p>
+      </div>
+
+      <div class="div3"><a class="stdBtn strong stdMargin" href="#download">Get Allusion</a></div>
+      <div class="div3-2"> <a href="#" class="round-button"><i class="fa fa-play fa-2x"></i></a></div>
+      <div class="div4">
+        <!--Placeholder image instead of 3D scene r-->
+        <img src="img/hero.png">
+      </div>
+    </div>
+
+    <div class="background">
+    </div>
+
+  </section>
+
+
+
+  <section id="features">
+
+    <!--Each big section has 3 subsections for each feature-->
+    <section id="tag_features">
       <div class="content">
         <div class="card">
-          
-      <div class="middle">
-        <h1>An innovative <br>approach to Tagging</h1>
-        <div class="menu">
-          
-            <ul>
-                
+          <div class="middle">
+            <h1>An innovative <br>approach to Tagging</h1>
+            <div class="menu">
 
-                <li class="item" id="messages" tabindex="1" >
-                    <a id="button1" href="#messages" class="btn"><i class="fa fa-envelope"></i> Tag Hierarchy</a>
-                    <div class="smenu">
-                      Anyone who has used tags before knows that at some point the list gets so long that one forgets what tags exist in first place. This problem is entirely solved by managing tags in a hierarchy instead.
+              <ul>
 
-                        
-                    </div>
-                    <!--Clicking on one feature shows the whole text and changes the image-->
-                    <script>
-                      window.addEventListener("load", () => {
-                          document.querySelector("#button1").addEventListener("click", e => {
-                             
-                              // Can also cancel the event and manually navigate
-                              e.preventDefault();
-                              window.location = e.target.href;
-                              var elem = document.getElementById("tag_features");
-                            elem.scrollIntoView();
-                            var image = document.getElementById('myImg_1');
-                            image.src = "img/feature_1.png";
-                          });
+                <li class="item" id="messages" tabindex="1">
+                  <a id="button1" href="#messages" class="btn"><i class="fa fa-envelope"></i> Tag Hierarchy</a>
+                  <div class="smenu">
+                    Anyone who has used tags before knows that at some point the list gets so long that one forgets what
+                    tags exist in first place. This problem is entirely solved by managing tags in a hierarchy instead.
+                  </div>
+                  <!--Clicking on one feature shows the whole text and changes the image-->
+                  <script>
+                    window.addEventListener("load", () => {
+                      document.querySelector("#button1").addEventListener("click", e => {
+
+                        // Can also cancel the event and manually navigate
+                        e.preventDefault();
+                        window.location = e.target.href;
+                        var elem = document.getElementById("tag_features");
+                        elem.scrollIntoView();
+                        var image = document.getElementById('myImg_1');
+                        image.src = "img/feature_1.png";
                       });
+                    });
                   </script>
                 </li>
 
                 <li class="item" id="settings" tabindex="1">
-                  <a id="button2" href="#settings" class="btn"><i class="fa fa-cog"></i> Easily find any untagged content
+                  <a id="button2" href="#settings" class="btn"><i class="fa fa-cog"></i> Easily find any untagged
+                    content
                   </a>
                   <div class="smenu">
-                      ...
-                      
+                    ...
                   </div>
                   <script>
                     window.addEventListener("load", () => {
-                        document.querySelector("#button2").addEventListener("click", e => {
-                           
-                            // Can also cancel the event and manually navigate
-                            e.preventDefault();
-                            window.location = e.target.href;
-                            var elem = document.getElementById("tag_features");
-                            elem.scrollIntoView();
-                            var image = document.getElementById('myImg_1');
-                            image.src = "img/feature_2.png";
-                        });
-                    });
-                </script>
-              </li>
-              <li class="item" id="profile" tabindex="1">
-                <a id="button3" href="#profile" class="btn"><i class="fa fa-user"></i> Colored labels</a>
-                <div class="smenu">
-                    ...
-                    
-                </div>
-                <script>
-                  window.addEventListener("load", () => {
-                      document.querySelector("#button3").addEventListener("click", e => {
-                         
-                          // Can also cancel the event and manually navigate
-                          e.preventDefault();
-                          window.location = e.target.href;
-                          var elem = document.getElementById("tag_features");
-                            elem.scrollIntoView();
-                            var image = document.getElementById('myImg_1');
-                            image.src = "img/feature_3.png";
+                      document.querySelector("#button2").addEventListener("click", e => {
+
+                        // Can also cancel the event and manually navigate
+                        e.preventDefault();
+                        window.location = e.target.href;
+                        var elem = document.getElementById("tag_features");
+                        elem.scrollIntoView();
+                        var image = document.getElementById('myImg_1');
+                        image.src = "img/feature_2.png";
                       });
-                  });
-              </script>
+                    });
+                  </script>
+                </li>
 
-                
-            </li>
-            </ul>
-        </div>
-
-        
-      </div>
-      <img src="img/cover.png" id="myImg_1" width="40" height="40">
-
-    
-
-    </div>
-    </div>
-  </section>
-
-  <section id="orgn_features">
-    <div class="content">
-      
-      <div class="card">
-        
-    <div class="middle">
-     
-      <div class="menu">
-       <h1>A great image <br>organizer at the core</h1> 
-          <ul>
-              
-
-              <li class="item" id="import" tabindex="1" >
-                  <a id="button4" href="#import" class="btn"><i class="fa fa-envelope"></i> Import directly while browsing online</a>
+                <li class="item" id="profile" tabindex="1">
+                  <a id="button3" href="#profile" class="btn"><i class="fa fa-user"></i> Colored labels</a>
                   <div class="smenu">
-                    Anyone who has used tags before knows that at some point the list gets so long that one forgets what tags exist in first place. This problem is entirely solved by managing tags in a hierarchy instead.
-
-                      
+                    ...
                   </div>
                   <script>
                     window.addEventListener("load", () => {
-                        document.querySelector("#button4").addEventListener("click", e => {
-                           
-                            // Can also cancel the event and manually navigate
-                            e.preventDefault();
-                            window.location = e.target.href;
-                            var elem = document.getElementById("orgn_features");
-                          elem.scrollIntoView();
-                          var image = document.getElementById('myImg_2');
-                          image.src = "img/feature_4.png";
-                        });
-                    });
-                </script>
-              </li>
+                      document.querySelector("#button3").addEventListener("click", e => {
 
-              <li class="item" id="watched" tabindex="1">
-                <a id="button5" href="#watched" class="btn"><i class="fa fa-cog"></i> Watched Folders
-                </a>
-                <div class="smenu">
-                    ...
-                    
-                </div>
-                <script>
-                  window.addEventListener("load", () => {
-                      document.querySelector("#button5").addEventListener("click", e => {
-                         
-                          // Can also cancel the event and manually navigate
-                          e.preventDefault();
-                          window.location = e.target.href;
-                          var elem = document.getElementById("orgn_features");
-                          elem.scrollIntoView();
-                          var image = document.getElementById('myImg_2');
-                          image.src = "img/feature_5.png";
+                        // Can also cancel the event and manually navigate
+                        e.preventDefault();
+                        window.location = e.target.href;
+                        var elem = document.getElementById("tag_features");
+                        elem.scrollIntoView();
+                        var image = document.getElementById('myImg_1');
+                        image.src = "img/feature_3.png";
                       });
-                  });
-              </script>
-            </li>
-            <li class="item" id="data" tabindex="1">
-              <a id="button6" href="#data" class="btn"><i class="fa fa-user"></i> Your data remains in control</a>
-              <div class="smenu">
-                  ...
-                  
-              </div>
-              <script>
-                window.addEventListener("load", () => {
-                    document.querySelector("#button6").addEventListener("click", e => {
-                       
+                    });
+                  </script>
+                </li>
+
+              </ul>
+
+            </div>
+          </div>
+          <img src="img/cover.png" id="myImg_1" width="40" height="40">
+        </div>
+      </div>
+    </section>
+
+    <section id="orgn_features">
+      <div class="content">
+        <div class="card">
+          <div class="middle">
+            <div class="menu">
+              <h1>A great image <br>organizer at the core</h1>
+              <ul>
+                <li class="item" id="import" tabindex="1">
+                  <a id="button4" href="#import" class="btn"><i class="fa fa-envelope"></i> Import directly while
+                    browsing online</a>
+                  <div class="smenu">
+                    Anyone who has used tags before knows that at some point the list gets so long that one forgets what
+                    tags exist in first place. This problem is entirely solved by managing tags in a hierarchy instead.
+
+
+                  </div>
+                  <script>
+                    window.addEventListener("load", () => {
+                      document.querySelector("#button4").addEventListener("click", e => {
+
                         // Can also cancel the event and manually navigate
                         e.preventDefault();
                         window.location = e.target.href;
                         var elem = document.getElementById("orgn_features");
-                          elem.scrollIntoView();
-                          var image = document.getElementById('myImg_2');
-                          image.src = "img/feature_5.png";
+                        elem.scrollIntoView();
+                        var image = document.getElementById('myImg_2');
+                        image.src = "img/feature_4.png";
+                      });
                     });
-                });
-            </script>
+                  </script>
+                </li>
 
-              
-          </li>
-          </ul>
+                <li class="item" id="watched" tabindex="1">
+                  <a id="button5" href="#watched" class="btn"><i class="fa fa-cog"></i> Watched Folders
+                  </a>
+                  <div class="smenu">
+                    ...
+
+                  </div>
+                  <script>
+                    window.addEventListener("load", () => {
+                      document.querySelector("#button5").addEventListener("click", e => {
+
+                        // Can also cancel the event and manually navigate
+                        e.preventDefault();
+                        window.location = e.target.href;
+                        var elem = document.getElementById("orgn_features");
+                        elem.scrollIntoView();
+                        var image = document.getElementById('myImg_2');
+                        image.src = "img/feature_5.png";
+                      });
+                    });
+                  </script>
+                </li>
+                <li class="item" id="data" tabindex="1">
+                  <a id="button6" href="#data" class="btn"><i class="fa fa-user"></i> Your data remains in control</a>
+                  <div class="smenu">
+                    ...
+
+                  </div>
+                  <script>
+                    window.addEventListener("load", () => {
+                      document.querySelector("#button6").addEventListener("click", e => {
+
+                        // Can also cancel the event and manually navigate
+                        e.preventDefault();
+                        window.location = e.target.href;
+                        var elem = document.getElementById("orgn_features");
+                        elem.scrollIntoView();
+                        var image = document.getElementById('myImg_2');
+                        image.src = "img/feature_5.png";
+                      });
+                    });
+                  </script>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <img src="img/cover.png" id="myImg_2" width="40" height="40">
+        </div>
       </div>
-    </div>
-    <img src="img/cover.png" id="myImg_2" width="40" height="40">
-  </div>
-  </div>
-</section>
+    </section>
 
-<section id="srch_features">
-  <div class="content">
-    <div class="card">
-      
-  <div class="middle">
-   
-    <div class="menu">
-     <h1>A powerful Search </h1> 
-        <ul>
-            
+    <section id="srch_features">
+      <div class="content">
+        <div class="card">
+          <div class="middle">
+            <div class="menu">
+              <h1>A powerful Search </h1>
+              <ul>
+                <li class="item" id="search" tabindex="1">
+                  <a id="button7" href="#search" class="btn"><i class="fa fa-envelope"></i> Search for tags</a>
+                  <div class="smenu">
+                    Anyone who has used tags before knows that at some point the list gets so long that one forgets what
+                    tags exist in first place. This problem is entirely solved by managing tags in a hierarchy instead.
 
-            <li class="item" id="search" tabindex="1" >
-                <a id="button7" href="#search" class="btn"><i class="fa fa-envelope"></i> Search for tags</a>
-                <div class="smenu">
-                  Anyone who has used tags before knows that at some point the list gets so long that one forgets what tags exist in first place. This problem is entirely solved by managing tags in a hierarchy instead.
 
-                    
-                </div>
-                <script>
-                  window.addEventListener("load", () => {
+                  </div>
+                  <script>
+                    window.addEventListener("load", () => {
                       document.querySelector("#button7").addEventListener("click", e => {
-                         
-                          // Can also cancel the event and manually navigate
-                          e.preventDefault();
-                          window.location = e.target.href;
-                          var elem = document.getElementById("srch_features");
+
+                        // Can also cancel the event and manually navigate
+                        e.preventDefault();
+                        window.location = e.target.href;
+                        var elem = document.getElementById("srch_features");
                         elem.scrollIntoView();
                         var image = document.getElementById('myImg_3');
                         image.src = "img/feature_7.png";
                       });
-                  });
-              </script>
-            </li>
+                    });
+                  </script>
+                </li>
+                <li class="item" id="searching" tabindex="1">
+                  <a id="button8" href="#searching" class="btn"><i class="fa fa-cog"></i> Searching from the sidebar
+                  </a>
+                  <div class="smenu">
+                    ...
 
-            <li class="item" id="searching" tabindex="1">
-              <a id="button8" href="#searching" class="btn"><i class="fa fa-cog"></i> Searching from the sidebar
-              </a>
-              <div class="smenu">
-                  ...
-                  
-              </div>
-              <script>
-                window.addEventListener("load", () => {
-                    document.querySelector("#button8").addEventListener("click", e => {
-                       
+                  </div>
+                  <script>
+                    window.addEventListener("load", () => {
+                      document.querySelector("#button8").addEventListener("click", e => {
+
                         // Can also cancel the event and manually navigate
                         e.preventDefault();
                         window.location = e.target.href;
@@ -298,47 +277,44 @@
                         elem.scrollIntoView();
                         var image = document.getElementById('myImg_3');
                         image.src = "img/feature_8.png";
+                      });
                     });
-                });
-            </script>
-          </li>
-          <li class="item" id="combine" tabindex="1">
-            <a id="button9" href="#combine" class="btn"><i class="fa fa-user"></i> Combine queries with the advanced search</a>
-            <div class="smenu">
-                ...
-                
-            </div>
-            <script>
-              window.addEventListener("load", () => {
-                  document.querySelector("#button9").addEventListener("click", e => {
-                     
-                      // Can also cancel the event and manually navigate
-                      e.preventDefault();
-                      window.location = e.target.href;
-                      var elem = document.getElementById("srch_features");
+                  </script>
+                </li>
+                <li class="item" id="combine" tabindex="1">
+                  <a id="button9" href="#combine" class="btn"><i class="fa fa-user"></i> Combine queries with the
+                    advanced search</a>
+                  <div class="smenu">
+                    ...
+
+                  </div>
+                  <script>
+                    window.addEventListener("load", () => {
+                      document.querySelector("#button9").addEventListener("click", e => {
+
+                        // Can also cancel the event and manually navigate
+                        e.preventDefault();
+                        window.location = e.target.href;
+                        var elem = document.getElementById("srch_features");
                         elem.scrollIntoView();
                         var image = document.getElementById('myImg_3');
                         image.src = "img/feature_9.png";
-                  });
-              });
-          </script>
-
-            
-        </li>
-        </ul>
-    </div>
-  </div>
-  <img src="img/cover.png" id="myImg_3" width="40" height="40">
-</div>
-</div>
-</section>
-
-  
-</section>
+                      });
+                    });
+                  </script>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <img src="img/cover.png" id="myImg_3" width="40" height="40">
+        </div>
+      </div>
+    </section>
+  </section>
 
 
-<!--Mobile version of the features above-->
-<!--<section id="mobile_features">
+  <!--Mobile version of the features above-->
+  <!--<section id="mobile_features">
   <div class="features-container">
     <div><h1>A great image <br>organizer at the core</h1> </div>
     <div><img  id="myImage"
@@ -389,127 +365,114 @@
  </div>
 
 </section>-->
+  <!--Various features here-->
 
-
-
-        
-     
-
-<!--Various features here-->
-
-<section id="mockup">
-  
-
-<div id="matter"> 
-
-  <img src="img/mock.png" alt="">
-     
-  
-    <div class="flex-features">
-      <div class="flex-item">
-                  <div class="box"></div>
-                  <div class="box"></div>
-                  <div class="box"></div>
-                </div>
-      <div class="flex-item">
-                  <div class="box_small"></div>
-                  <div class="box"></div>
-                  <div class="box"></div>
-                  <div class="box"></div>
-                </div>
-      <div class="flex-item">
-                  <div class="box"></div>
-                  <div class="box"></div>
-                  <div class="box"></div>
-                </div>          
+  <section id="mockup">
+    <div id="matter">
+      <img src="img/mock.png" alt="">
+      <div class="flex-features">
+        <div class="flex-item">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+        <div class="flex-item">
+          <div class="box_small"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+        <div class="flex-item">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </div>
     </div>
-  
-        
-  
-    
-</div>
-</div>  
-    </section>
+  </section>
 
-    
-    <section id="download" class="bgGrad">
-      <div class="content">
-        <span aria-hidden="true" class="fas fa-download"></span>
-        <div class="alt text">
-          <h3 class="alt stdMargin">Get Allusion</h3>
-          <p class="stdMargin">
-            Allusion is available for Windows, MacOS and Linux. You can download it through the links below.
-          </p>
-          <div class="flexRow">
-            <a class="stdBtn alt" id="download-windows" href="https://github.com/allusion-app/Allusion/releases/latest">
-              Allusion for Windows
-            </a>
-            <a class="stdBtn alt" id="download-mac" href="https://github.com/allusion-app/Allusion/releases/latest">
-              Allusion for MacOS
-            </a>
-            <a class="stdBtn alt" id="download-linux" href="https://github.com/allusion-app/Allusion/releases/latest">
-              Allusion for Linux
-            </a>
-          </div>
-          <small class="stdMargin">
-            <span aria-hidden="true" class="fas fa-info-circle"></span> Not what you're looking for? Check out our <a class="alt" href="https://github.com/allusion-app/Allusion/releases/latest">releases page</a> or send us a <a class="alt" href="mailto:allusion.app@gmail.com">message</a>!
-          </small>
+
+  <section id="download" class="bgGrad">
+    <div class="content">
+      <span aria-hidden="true" class="fas fa-download"></span>
+      <div class="alt text">
+        <h3 class="alt stdMargin">Get Allusion</h3>
+        <p class="stdMargin">
+          Allusion is available for Windows, MacOS and Linux. You can download it through the links below.
+        </p>
+        <div class="flexRow">
+          <a class="stdBtn alt" id="download-windows" href="https://github.com/allusion-app/Allusion/releases/latest">
+            Allusion for Windows
+          </a>
+          <a class="stdBtn alt" id="download-mac" href="https://github.com/allusion-app/Allusion/releases/latest">
+            Allusion for MacOS
+          </a>
+          <a class="stdBtn alt" id="download-linux" href="https://github.com/allusion-app/Allusion/releases/latest">
+            Allusion for Linux
+          </a>
         </div>
+        <small class="stdMargin">
+          <span aria-hidden="true" class="fas fa-info-circle"></span> Not what you're looking for? Check out our <a
+            class="alt" href="https://github.com/allusion-app/Allusion/releases/latest">releases page</a> or send us a
+          <a class="alt" href="mailto:allusion.app@gmail.com">message</a>!
+        </small>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="contact">
-      <div class="content">
-        <h3 class="stdMargin">Meet the Team!</h3>
-        <div class="cardWrapper stdMargin">
-          <a class="card" href="https://twitter.com/dani_kreuter">
-            <span aria-hidden="true" class="fas fa-tasks"></span>
-            <h4>Daniel</h4>
-            <p>Planner</p>
-          </a>
-          <a class="card" href="https://twitter.com/RemiVdLaan">
-            <span aria-hidden="true" class="fas fa-code"></span>
-            <h4>Remi</h4>
-            <p>Developer</p>
-          </a>
-          <div class="break"></div>
-          <!-- break -->
-          <a class="card" href="https://twitter.com/romboutv">
-            <span aria-hidden="true" class="fas fa-vector-square"></span>
-            <h4>Rombout</h4>
-            <p>UI Designer</p>
-          </a>
-          <a class="card" href="https://twitter.com/hummingly_">
-            <span aria-hidden="true" class="fas fa-code-branch"></span>
-            <h4>Chi</h4>
-            <p>Developer</p>
-          </a>
-          <a class="card" href="https://twitter.com/afaysalk">
-            <span aria-hidden="true" class="fas fa-object-ungroup"></span>
-            <h4>Faysal</h4>
-            <p>Web Dev</p>
-          </a>
-        </div>
-        <div class="text stdMargin">
-          <p>You can also contact us through:</p>
-          <a href="mailto:allusion.app@gmail.com">allusion.app@gmail.com</a>
-        </div>
-       <div class="text stdMargin">
-          <p>View the source code at:</p>
-          <a href="https://github.com/allusion-app/Allusion">github.com/allusion-app/Allusion</a>
-        </div>
+  <section id="contact">
+    <div class="content">
+      <h3 class="stdMargin">Meet the Team!</h3>
+      <div class="cardWrapper stdMargin">
+        <a class="card" href="https://twitter.com/dani_kreuter">
+          <span aria-hidden="true" class="fas fa-tasks"></span>
+          <h4>Daniel</h4>
+          <p>Planner</p>
+        </a>
+        <a class="card" href="https://twitter.com/RemiVdLaan">
+          <span aria-hidden="true" class="fas fa-code"></span>
+          <h4>Remi</h4>
+          <p>Developer</p>
+        </a>
+        <div class="break"></div>
+        <!-- break -->
+        <a class="card" href="https://twitter.com/romboutv">
+          <span aria-hidden="true" class="fas fa-vector-square"></span>
+          <h4>Rombout</h4>
+          <p>UI Designer</p>
+        </a>
+        <a class="card" href="https://twitter.com/hummingly_">
+          <span aria-hidden="true" class="fas fa-code-branch"></span>
+          <h4>Chi</h4>
+          <p>Developer</p>
+        </a>
+        <a class="card" href="https://twitter.com/afaysalk">
+          <span aria-hidden="true" class="fas fa-object-ungroup"></span>
+          <h4>Faysal</h4>
+          <p>Web Dev</p>
+        </a>
       </div>
-    </section>
+      <div class="text stdMargin">
+        <p>You can also contact us through:</p>
+        <a href="mailto:allusion.app@gmail.com">allusion.app@gmail.com</a>
+      </div>
+      <div class="text stdMargin">
+        <p>View the source code at:</p>
+        <a href="https://github.com/allusion-app/Allusion">github.com/allusion-app/Allusion</a>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-      <a href="#introduction">
-        <div class="content">
-          <img src="img/logoAlt.svg" alt="" width="64" height="52" />
-          <span id="brandname">Allusion</span>
-        </div>
-      </a>
-    </footer>
+  <footer>
+    <a href="#introduction">
+      <div class="content">
+        <img src="img/logoAlt.svg" alt="" width="64" height="52" />
+        <span id="brandname">Allusion</span>
+      </div>
+    </a>
+  </footer>
 
-    <script async src="js/index.js"></script>
-  </body>
+  <script async src="js/index.js"></script>
+</body>
+
 </html>
