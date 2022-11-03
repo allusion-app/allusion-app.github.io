@@ -1,0 +1,128 @@
+
+ #matter {
+    position: relative;
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #matter > img{
+    width: 70rem;
+  }
+  
+  #mockup .flex-features {
+    margin-top: 5rem;
+    margin-left: 17rem;
+    width: 50rem;
+    height: 110%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+   
+  }
+ 
+
+  .flex-item {
+    margin-bottom: 10%;
+    flex: 33.33%;
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .flex-item_alt {
+   
+    flex: 33.33%;
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .box {
+    opacity: 0.1;
+    padding: 10% 5%;
+    border-radius: 10%;
+    margin-bottom: 6%;
+    height: 10%;
+    flex: 33.33%;
+    background: linear-gradient(  rgba(58, 58, 60, 1), rgba(58, 58, 60, 1)) padding-box;
+              
+    transition: ease-in-out 0.3s;
+    
+  }
+  .box_small {
+    opacity: 0.1;
+    border-radius: 0 0 5% 5%;
+    margin-bottom: 6%;
+    height: 5%;
+    flex: 10%;
+    background-color: rgba(58, 58, 60, 1);
+  }
+      
+
+  .box:hover{
+    opacity: 1;
+    transform: scale(108%);
+    background: linear-gradient(  rgba(58, 58, 60, 1), rgba(58, 58, 60, 1)) padding-box,
+              linear-gradient(to bottom, rgb(24, 81, 206), rgb(15, 226, 173)) border-box;
+  border-radius: 10%;
+  border: 4px solid transparent;
+  transition: ease-in-out 0.3s;
+    
+  }
+
+  .box img{
+    transition: ease-in-out 0.3s;
+    margin-left: auto;
+  margin-right: auto;
+  display: block;
+    padding-top: 30%;
+   
+  }
+  .box:hover img{
+    transition: ease-in-out 0.3s;
+    padding-top: 0%;
+  }
+
+  .box:hover p{
+    color: #999999 !important;
+  }
+  .box:hover h2 {
+    color: #bebebe!important;
+    
+}
+
+  #mockup p {
+    font-weight: 100;
+    color: rgba(58, 58, 60, 1);
+    font-size: 0.9rem;
+}
+
+#mockup h2 {
+    font-weight: 600;
+    color: rgba(58, 58, 60, 1);
+    font-size: 1.5rem;
+}
+
+#mockup h1 {
+    padding-top: 5rem;
+    padding-left: 5rem;
+    padding-bottom: 3rem;
+    font-weight: 600;
+    font-size: 4rem;
+    text-align: center;
+}
+  
+
+
+@media screen and (min-width: 0px) and (max-width: 400px) {
+    #matter { display: block; }  /* show it on small screens */
+   
+  }
+  
+  @media screen and (min-width: 401px) and (max-width: 1024px) {
+    #matter { display: none; }   /* hide it elsewhere */
+    
+  
+  }
