@@ -55,6 +55,8 @@
 }
 
 #features .image_bg {
+  position: relative;
+  visibility: hidden;
   width: 100%;
   height: 100%;
   border-radius: 0.5rem;
@@ -63,9 +65,15 @@
   overflow: hidden;
   display: flex;
   align-items: center;
+  flex-direction: column
+}
+
+#features .screenshot {
+  visibility:visible
 }
 
 #features .image_frame img {
+  position: absolute;
   width: 100%;
 }
 
@@ -81,14 +89,46 @@
 }
 
 #features .scroll_thumb {
+  visibility: hidden;
   position: absolute;
   left: 0px;
   right: 0px;
   top: 0px;
-  bottom: 250px;
+  bottom: 50%;
+
   background-color: #56c7df;
   border-radius: 0.15rem;
+  vertical-align:bottom;
 }
+#features .scroll_thumb_2 {
+  visibility: hidden;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 25%;
+  bottom: 25%;
+  background-color: #56c7df;
+  border-radius: 0.15rem;
+  vertical-align:bottom;
+}
+#features .scroll_thumb_3 {
+  visibility: hidden;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 50%;
+  bottom: 0px;
+  background-color: #56c7df;
+  border-radius: 0.15rem;
+  vertical-align:bottom;
+}
+
+
+#features .blue {
+  visibility: visible;
+}
+
+
 
 #features .fList {
   width: 100%;
@@ -180,6 +220,7 @@
 }
 
 #features_mobile .fSlider {
+  
   display: flex;
   overflow: hidden;
   scroll-snap-type: x mandatory;
@@ -229,6 +270,7 @@
 }
 
 #features_mobile .row {
+  
   display: flex;
   justify-content: center;
 }
