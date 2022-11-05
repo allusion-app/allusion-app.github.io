@@ -14,9 +14,14 @@
   <title>Allusion - Visual Library Manager</title>
 
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/introduction.css" />
   <link rel="stylesheet" href="css/features.css" />
   <link rel="stylesheet" href="css/mockup.css" />
   <link rel="stylesheet" href="css/carousel.css" />
+  <link rel="stylesheet" href="css/download.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="css/footer.css" />
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
@@ -27,7 +32,7 @@
   <!-- Allusion logo -->
 
   <header id="navbar">
-    <div class="navbar" href="index.html">
+    <div class="navbar">
       <img src="img/logo.png" alt="" />
       <span>Allusion</span>
     </div>
@@ -37,22 +42,23 @@
   <section id="introduction">
 
     <div class="parent">
-      <div class="div1">
+      <div class="c1">
         <p id="title">Unleash your </p>
         <p id="subTitle"> Creativity</p>
-      </div>
-      <div class="div2">
-        <p class="stdMargin">
-        <h5 id="paragraph">Never lose another reference.
-          Allusion helps artists manage their collections of reference images and inspirations.</h5>
+        <img class="hero" src="img/hero_2.png">
+        <p id="paragraph" class="stdMargin">Never lose another reference.
+          Allusion helps artists manage their collections of reference images and inspirations.
         </p>
+        <div class="row">
+          <a class="stdBtn strong stdMargin" href="#download">Get Allusion</a>
+          <a href="#" class="round-button stdMargin">
+            <i class="fa fa-play fa-2x" style="margin: 0 0 0.0625rem 0.25rem;"></i>
+          </a>
+        </div>
       </div>
-
-      <div class="div3"><a class="stdBtn strong stdMargin" href="#download">Get Allusion</a></div>
-      <div class="div3-2"> <a href="#" class="round-button"><i class="fa fa-play fa-2x"></i></a></div>
-      <div class="div4">
-        <!--Placeholder image instead of 3D scene r-->
-        <img src="img/hero.png">
+      <div class="c2">
+        <!-- THIS ART IS TEMPORARY - THE IMAGES SHOWN ON THE UI NEED TO BE REPLACED BEFORE PUBLISHING -->
+        <img class="hero" src="img/hero_2.png">
       </div>
     </div>
 
@@ -92,7 +98,8 @@
             <div class="fList">
 
               <div id="f_elm_1" class="fListElement active">
-                <div class="header" onclick="featuresSelect('f_p1','f_elm_1','f_thumb_1','f_scroll_1','f_bg_1','f_img_1')"
+                <div class="header"
+                  onclick="featuresSelect('f_p1','f_elm_1','f_thumb_1','f_scroll_1','f_bg_1','f_img_1')"
                   onmouseover="featuresSelect('f_p1','f_elm_1','f_thumb_1','f_scroll_1','f_bg_1','f_img_1')">
                   <div class="icon">
                     <svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
@@ -117,7 +124,8 @@
               </div>
 
               <div id="f_elm_2" class="fListElement">
-                <div class="header" onclick="featuresSelect('f_p1','f_elm_2','f_thumb_2','f_scroll_1','f_bg_1','f_img_2')"
+                <div class="header"
+                  onclick="featuresSelect('f_p1','f_elm_2','f_thumb_2','f_scroll_1','f_bg_1','f_img_2')"
                   onmouseover="featuresSelect('f_p1','f_elm_2','f_thumb_2','f_scroll_1','f_bg_1','f_img_2')">
                   <div class="icon">
                     <svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
@@ -140,7 +148,8 @@
               </div>
 
               <div id="f_elm_3" class="fListElement">
-                <div class="header" onclick="featuresSelect('f_p1','f_elm_3','f_thumb_3','f_scroll_1','f_bg_1','f_img_3')"
+                <div class="header"
+                  onclick="featuresSelect('f_p1','f_elm_3','f_thumb_3','f_scroll_1','f_bg_1','f_img_3')"
                   onmouseover="featuresSelect('f_p1','f_elm_3','f_thumb_3','f_scroll_1','f_bg_1','f_img_3')">
                   <div class="icon">
                     <svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
@@ -181,8 +190,8 @@
         <div class="image_frame">
           <div class="image_bg" id="f_bg_2">
             <img src="img/feature_4.png" alt="" id="f_img_4" class="screenshot">
-            <img src="img/feature_5.png" alt=""id="f_img_5">
-            <img src="img/feature_4.png" alt=""id="f_img_6">
+            <img src="img/feature_5.png" alt="" id="f_img_5">
+            <img src="img/feature_4.png" alt="" id="f_img_6">
           </div>
         </div>
         <!-- Text Side -->
@@ -202,7 +211,8 @@
             <div class="fList">
 
               <div id="f_elm_4" class="fListElement active">
-                <div class="header" onclick="featuresSelect('f_p2','f_elm_4','f_thumb_4','f_scroll_2','f_bg_2','f_img_4')"
+                <div class="header"
+                  onclick="featuresSelect('f_p2','f_elm_4','f_thumb_4','f_scroll_2','f_bg_2','f_img_4')"
                   onmouseover="featuresSelect('f_p2','f_elm_4','f_thumb_4','f_scroll_2','f_bg_2','f_img_4')">
                   <div class="icon">
                     <svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
@@ -228,7 +238,8 @@
               </div>
 
               <div id="f_elm_5" class="fListElement">
-                <div class="header" onclick="featuresSelect('f_p2','f_elm_5','f_thumb_5','f_scroll_2','f_bg_2','f_img_5')"
+                <div class="header"
+                  onclick="featuresSelect('f_p2','f_elm_5','f_thumb_5','f_scroll_2','f_bg_2','f_img_5')"
                   onmouseover="featuresSelect('f_p2','f_elm_5','f_thumb_5','f_scroll_2','f_bg_2','f_img_5')">
                   <div class="icon">
                     <svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
@@ -256,7 +267,8 @@
               </div>
 
               <div id="f_elm_6" class="fListElement">
-                <div class="header" onclick="featuresSelect('f_p2','f_elm_6','f_thumb_6','f_scroll_2','f_bg_2','f_img_6')"
+                <div class="header"
+                  onclick="featuresSelect('f_p2','f_elm_6','f_thumb_6','f_scroll_2','f_bg_2','f_img_6')"
                   onmouseover="featuresSelect('f_p2','f_elm_6','f_thumb_6','f_scroll_2','f_bg_2','f_img_6')">
                   <div class="icon">
                     <svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
@@ -295,8 +307,8 @@
         <div class="image_frame">
           <div class="image_bg" id="f_bg_3">
             <img src="img/feature_7.png" alt="" id="f_img_7" class="screenshot">
-            <img src="img/feature_8.png" alt=""id="f_img_8">
-            <img src="img/feature_9.png" alt=""id="f_img_9">
+            <img src="img/feature_8.png" alt="" id="f_img_8">
+            <img src="img/feature_9.png" alt="" id="f_img_9">
           </div>
         </div>
         <!-- Text Side -->
@@ -316,7 +328,8 @@
             <div class="fList">
 
               <div id="f_elm_7" class="fListElement active">
-                <div class="header" onclick="featuresSelect('f_p3','f_elm_7','f_thumb_7','f_scroll_3','f_bg_3','f_img_7')"
+                <div class="header"
+                  onclick="featuresSelect('f_p3','f_elm_7','f_thumb_7','f_scroll_3','f_bg_3','f_img_7')"
                   onmouseover="featuresSelect('f_p3','f_elm_7','f_thumb_7','f_scroll_3','f_bg_3','f_img_7')">
                   <div class="icon">
                     <svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
@@ -343,7 +356,8 @@
               </div>
 
               <div id="f_elm_8" class="fListElement">
-                <div class="header" onclick="featuresSelect('f_p3','f_elm_8','f_thumb_8','f_scroll_3','f_bg_3','f_img_8')"
+                <div class="header"
+                  onclick="featuresSelect('f_p3','f_elm_8','f_thumb_8','f_scroll_3','f_bg_3','f_img_8')"
                   onmouseover="featuresSelect('f_p3','f_elm_8','f_thumb_8','f_scroll_3','f_bg_3','f_img_8')">
                   <div class="icon">
                     <svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
@@ -378,8 +392,9 @@
               </div>
 
               <div id="f_elm_9" class="fListElement">
-                <div class="header" onclick="featuresSelect('f_p3','f_elm_9','f_thumb_9','f_scroll_3','f_bg_3','f_img_9')"
-                onmouseover="featuresSelect('f_p3','f_elm_9','f_thumb_9','f_scroll_3','f_bg_3','f_img_9')">
+                <div class="header"
+                  onclick="featuresSelect('f_p3','f_elm_9','f_thumb_9','f_scroll_3','f_bg_3','f_img_9')"
+                  onmouseover="featuresSelect('f_p3','f_elm_9','f_thumb_9','f_scroll_3','f_bg_3','f_img_9')">
                   <div class="icon">
                     <svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
                       <path
@@ -474,7 +489,7 @@
 
       <div class="navigation">
         <div class="row">
-          <a href="#javascript:void(0)" onclick="mobileScroll('f1')" >
+          <a href="#javascript:void(0)" onclick="mobileScroll('f1')">
             <div class="icon">
               <svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
                 <path
@@ -485,7 +500,7 @@
               </svg>
             </div>
           </a>
-          <a href="#javascript:void(0)" onclick="mobileScroll('f2')" >
+          <a href="#javascript:void(0)" onclick="mobileScroll('f2')">
             <div class="icon active">
               <svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
                 <path
@@ -495,7 +510,7 @@
               </svg>
             </div>
           </a>
-          <a href="#javascript:void(0)" onclick="mobileScroll('f3')" >
+          <a href="#javascript:void(0)" onclick="mobileScroll('f3')">
             <div class="icon">
               <svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
                 <path
@@ -582,7 +597,7 @@
 
       <div class="navigation">
         <div class="row">
-          <a href="#javascript:void(0)" onclick="mobileScroll('f4')" >
+          <a href="#javascript:void(0)" onclick="mobileScroll('f4')">
             <div class="icon">
               <svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
                 <path
@@ -594,7 +609,7 @@
               </svg>
             </div>
           </a>
-          <a href="#javascript:void(0)" onclick="mobileScroll('f5')" >
+          <a href="#javascript:void(0)" onclick="mobileScroll('f5')">
             <div class="icon active">
               <svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
                 <circle cx="27" cy="18" r="4" />
@@ -609,7 +624,7 @@
               </svg>
             </div>
           </a>
-          <a href="#javascript:void(0)" onclick="mobileScroll('f6')" >
+          <a href="#javascript:void(0)" onclick="mobileScroll('f6')">
             <div class="icon">
               <svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
                 <path
@@ -693,7 +708,7 @@
 
       <div class="navigation">
         <div class="row">
-          <a href="#javascript:void(0)" onclick="mobileScroll('f7')" >
+          <a href="#javascript:void(0)" onclick="mobileScroll('f7')">
             <div class="icon">
               <svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
                 <path
@@ -707,7 +722,7 @@
               </svg>
             </div>
           </a>
-          <a href="#javascript:void(0)" onclick="mobileScroll('f8')" >
+          <a href="#javascript:void(0)" onclick="mobileScroll('f8')">
             <div class="icon active">
               <svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
                 <path
@@ -729,7 +744,7 @@
               </svg>
             </div>
           </a>
-          <a href="#javascript:void(0)" onclick="mobileScroll('f9')" >
+          <a href="#javascript:void(0)" onclick="mobileScroll('f9')">
             <div class="icon">
               <svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
                 <path
@@ -747,7 +762,7 @@
       </div>
 
     </div>
-    
+
   </section>
 
 

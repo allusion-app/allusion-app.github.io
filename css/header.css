@@ -1,0 +1,29 @@
+#navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  width: 100%;
+  padding: 2rem 2rem 4rem 2rem;
+  font-weight: bold;
+  font-size: 30px;
+  color: #fafcfd;
+  display: flex;
+  align-items: center;
+}
+.navbar img {
+  width: 2.5rem;
+  margin-right: 1rem;
+}
+.navbar span {
+  line-height: 1;
+  padding-top: 0.25rem;
+}
+
+@media (max-width: 1100px) {
+  .navbar {
+    justify-content: center;
+  }
+}

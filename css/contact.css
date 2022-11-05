@@ -1,0 +1,48 @@
+/***********/
+/* CONTACT */
+/***********/
+
+#contact {
+  background: #eee;
+  padding: 2rem 0;
+  text-align: center;
+}
+#contact .content {
+  padding: 0 8vw 1rem 8vw;
+}
+
+#contact .cardWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#contact .cardWrapper a {
+  color: inherit;
+}
+
+#contact .card {
+  padding: 1rem;
+  min-width: 8rem;
+  margin: 1rem 0.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+#contact .card:hover {
+  background: #eee;
+}
+#contact .card .fas {
+  color: #1473e6;
+  font-size: 1.5rem;
+}
+#contact .break {
+  display: none;
+}
+
+@media only screen and (max-width: 840px) {
+  #contact .break {
+    display: block;
+    flex-basis: 100%;
+    height: 0;
+  }
+}

@@ -1,0 +1,56 @@
+/************/
+/* Download */
+/************/
+
+#download .flexRow {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1rem 0.5rem 0 0.5rem;
+}
+
+#message,
+#download {
+  background: #1473e6;
+  padding: 2rem 0;
+}
+#message .content,
+#download .content {
+  max-width: 80rem;
+  padding: 0 8vw 0.5rem 8vw;
+  display: grid;
+  grid-template-columns: 10rem auto;
+}
+#message .content > .fas,
+#download .content > .fas {
+  font-size: 5rem;
+  color: #fff;
+  grid-area: 1 / 1 / 1 / 1;
+  justify-self: center;
+  align-self: center;
+}
+#message .text,
+#download .text {
+  grid-area: 1 / 2 / 1 / 2;
+}
+
+@media only screen and (max-width: 840px) {
+  #message .content,
+  #download .content {
+    display: block;
+    text-align: center;
+  }
+  #message .content > .fas,
+  #download .content > .fas {
+    font-size: 3rem;
+    margin: 1rem;
+  }
+  #download .flexRow {
+    margin: 2rem 0.5rem;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #download .stdBtn {
+    min-width: 18rem;
+  }
+}

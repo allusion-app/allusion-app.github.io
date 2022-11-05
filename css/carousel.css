@@ -1,144 +1,151 @@
-
-
-.slider{width: 100%;
-padding:20rem 0 5rem;}
-.slider input{display: none;}
-.features{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-	height: 22rem;
-	perspective: 1000px;
-	overflow: hidden;
+#carousel .slider {
+  width: 100%;
+  padding: 20rem 0 5rem;
 }
-.features .item{
-	width: 17rem;
-	height: 20rem;
-	padding: 30px;
-	border-radius: 5%;
-	background: linear-gradient(  rgba(58, 58, 60, 1), rgba(58, 58, 60, 1)) padding-box;
-	position: absolute;
-	top: 0;
-	box-sizing: border-box;
-	text-align: center;
-	transition: transform 0.4s;
-	box-shadow: 0 0 10px rgba(0,0,0,0.3);
-	user-select: none;
-	cursor: pointer;
+#carousel .slider input {
+  display: none;
 }
-.features .item h1{font-size: 114px; color: white;}
-.dots{display: flex; justify-content: center;align-items: center;}
-.dots label{
-	height: 5px;
-	width: 5px;
-	border-radius: 50%;
-	cursor: pointer;
-	background-color: #413B52;
-	margin: 7px;
-	transition-duration: 0.2s;
+#carousel .features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 22rem;
+  perspective: 1000px;
+  overflow: hidden;
 }
-#t-1:checked ~ .dots label[for="t-1"],
-#t-2:checked ~ .dots label[for="t-2"],
-#t-3:checked ~ .dots label[for="t-3"],
-#t-4:checked ~ .dots label[for="t-4"],
-#t-5:checked ~ .dots label[for="t-5"]{
-	transform: scale(2);
-	background-color: rgb(73, 223, 243);
-	box-shadow: 0px 0px 0px 3px #dddddd24;
+#carousel .features .item {
+  width: 17rem;
+  height: 20rem;
+  padding: 30px;
+  border-radius: 5%;
+  background: linear-gradient(rgba(58, 58, 60, 1), rgba(58, 58, 60, 1))
+    padding-box;
+  position: absolute;
+  top: 0;
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.4s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  user-select: none;
+  cursor: pointer;
 }
-
-#t-1:checked ~ .dots label[for="t-2"],
-#t-2:checked ~ .dots label[for="t-1"],
-#t-2:checked ~ .dots label[for="t-3"],
-#t-3:checked ~ .dots label[for="t-2"],
-#t-3:checked ~ .dots label[for="t-4"],
-#t-4:checked ~ .dots label[for="t-3"],
-#t-4:checked ~ .dots label[for="t-5"],
-#t-5:checked ~ .dots label[for="t-4"]{
-	transform: scale(1.5);
-	transition: ease-in-out 0.3s;
+#carousel .features .item h1 {
+  font-size: 114px;
+  color: white;
+}
+#carousel .dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#carousel .dots label {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #413b52;
+  margin: 7px;
+  transition-duration: 0.2s;
+}
+#carousel #t-1:checked ~ .dots label[for="t-1"],
+#carousel #t-2:checked ~ .dots label[for="t-2"],
+#carousel #t-3:checked ~ .dots label[for="t-3"],
+#carousel #t-4:checked ~ .dots label[for="t-4"],
+#carousel #t-5:checked ~ .dots label[for="t-5"] {
+  transform: scale(2);
+  background-color: rgb(73, 223, 243);
+  box-shadow: 0px 0px 0px 3px #dddddd24;
 }
 
-#t-1:checked ~ .features label[for="t-3"],
-#t-2:checked ~ .features label[for="t-4"],
-#t-3:checked ~ .features label[for="t-5"],
-#t-4:checked ~ .features label[for="t-1"],
-#t-5:checked ~ .features label[for="t-2"]{
-	transform: translate3d(600px, 0, -180px) rotateY(-25deg);
-	z-index: 2;
-	opacity: 0.1;
-	transition: ease-in-out 0.3s;
+#carousel #t-1:checked ~ .dots label[for="t-2"],
+#carousel #t-2:checked ~ .dots label[for="t-1"],
+#carousel #t-2:checked ~ .dots label[for="t-3"],
+#carousel #t-3:checked ~ .dots label[for="t-2"],
+#carousel #t-3:checked ~ .dots label[for="t-4"],
+#carousel #t-4:checked ~ .dots label[for="t-3"],
+#carousel #t-4:checked ~ .dots label[for="t-5"],
+#carousel #t-5:checked ~ .dots label[for="t-4"] {
+  transform: scale(1.5);
+  transition: ease-in-out 0.3s;
 }
 
-#t-1:checked ~ .features label[for="t-2"],
-#t-2:checked ~ .features label[for="t-3"],
-#t-3:checked ~ .features label[for="t-4"],
-#t-4:checked ~ .features label[for="t-5"],
-#t-5:checked ~ .features label[for="t-1"]{
-	transform: translate3d(300px, 0, -90px) rotateY(-15deg);
-	z-index: 3;
-	opacity: 0.1;
-	transition: ease-in-out 0.3s;
+#carousel #t-1:checked ~ .features label[for="t-3"],
+#carousel #t-2:checked ~ .features label[for="t-4"],
+#carousel #t-3:checked ~ .features label[for="t-5"],
+#carousel #t-4:checked ~ .features label[for="t-1"],
+#carousel #t-5:checked ~ .features label[for="t-2"] {
+  transform: translate3d(600px, 0, -180px) rotateY(-25deg);
+  z-index: 2;
+  opacity: 0.1;
+  transition: ease-in-out 0.3s;
 }
 
-#t-2:checked ~ .features label[for="t-1"],
-#t-3:checked ~ .features label[for="t-2"],
-#t-4:checked ~ .features label[for="t-3"],
-#t-5:checked ~ .features label[for="t-4"],
-#t-1:checked ~ .features label[for="t-5"]{
-	transform: translate3d(-300px, 0, -90px) rotateY(15deg);
-	z-index: 3;
-	opacity: 0.1;
-	transition: ease-in-out 0.3s;
+#carousel #t-1:checked ~ .features label[for="t-2"],
+#carousel #t-2:checked ~ .features label[for="t-3"],
+#carousel #t-3:checked ~ .features label[for="t-4"],
+#carousel #t-4:checked ~ .features label[for="t-5"],
+#carousel #t-5:checked ~ .features label[for="t-1"] {
+  transform: translate3d(300px, 0, -90px) rotateY(-15deg);
+  z-index: 3;
+  opacity: 0.1;
+  transition: ease-in-out 0.3s;
 }
 
-#t-3:checked ~ .features label[for="t-1"],
-#t-4:checked ~ .features label[for="t-2"],
-#t-5:checked ~ .features label[for="t-3"],
-#t-2:checked ~ .features label[for="t-5"],
-#t-1:checked ~ .features label[for="t-4"]{
-	transform: translate3d(-600px, 0, -180px) rotateY(25deg);
-	opacity: 0.1;
-	transition: ease-in-out 0.3s;
+#carousel #t-2:checked ~ .features label[for="t-1"],
+#carousel #t-3:checked ~ .features label[for="t-2"],
+#carousel #t-4:checked ~ .features label[for="t-3"],
+#carousel #t-5:checked ~ .features label[for="t-4"],
+#carousel #t-1:checked ~ .features label[for="t-5"] {
+  transform: translate3d(-300px, 0, -90px) rotateY(15deg);
+  z-index: 3;
+  opacity: 0.1;
+  transition: ease-in-out 0.3s;
 }
 
-#t-1:checked ~ .features label[for="t-1"],
-#t-2:checked ~ .features label[for="t-2"],
-#t-3:checked ~ .features label[for="t-3"],
-#t-4:checked ~ .features label[for="t-4"],
-#t-5:checked ~ .features label[for="t-4"],
-#t-5:checked ~ .features label[for="t-5"]{
-	background: linear-gradient(  rgba(58, 58, 60, 1), rgba(58, 58, 60, 1)) padding-box,
-	linear-gradient(to bottom, rgb(24, 81, 206), rgb(15, 226, 173)) border-box;
-border-radius: 10%;
-border: 4px solid transparent;
-transition: ease-in-out 0.3s;
-	z-index: 4;
+#carousel #t-3:checked ~ .features label[for="t-1"],
+#carousel #t-4:checked ~ .features label[for="t-2"],
+#carousel #t-5:checked ~ .features label[for="t-3"],
+#carousel #t-2:checked ~ .features label[for="t-5"],
+#carousel #t-1:checked ~ .features label[for="t-4"] {
+  transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+  opacity: 0.1;
+  transition: ease-in-out 0.3s;
 }
 
-
+#carousel #t-1:checked ~ .features label[for="t-1"],
+#carousel #t-2:checked ~ .features label[for="t-2"],
+#carousel #t-3:checked ~ .features label[for="t-3"],
+#carousel #t-4:checked ~ .features label[for="t-4"],
+#carousel #t-5:checked ~ .features label[for="t-4"],
+#carousel #t-5:checked ~ .features label[for="t-5"] {
+  background: linear-gradient(rgba(58, 58, 60, 1), rgba(58, 58, 60, 1))
+      padding-box,
+    linear-gradient(to bottom, rgb(24, 81, 206), rgb(15, 226, 173)) border-box;
+  border-radius: 10%;
+  border: 4px solid transparent;
+  transition: ease-in-out 0.3s;
+  z-index: 4;
+}
 
 #carousel h2 {
-	color: #d6d6d6!important;
-	padding:0 7rem 0 ;
-    font-weight: 600;
-    color: rgba(58, 58, 60, 1);
-    font-size: 2rem;
-	text-align: center;
+  color: #d6d6d6 !important;
+  padding: 0 7rem 0;
+  font-weight: 600;
+  color: rgba(58, 58, 60, 1);
+  font-size: 2rem;
+  text-align: center;
 }
 
 #carousel p {
-	color: #d6d6d6!important;
-	padding:0 6rem 0 ;
-    font-weight: 100;
-    color: rgba(58, 58, 60, 1);
-    font-size: 1.3rem;
-	text-align: center;
+  color: #d6d6d6 !important;
+  padding: 0 6rem 0;
+  font-weight: 100;
+  color: rgba(58, 58, 60, 1);
+  font-size: 1.3rem;
+  text-align: center;
 }
 
 #carousel img {
-	padding-top: 30%;
+  padding-top: 30%;
 }
-
-
