@@ -43,11 +43,7 @@
 
 #introduction h2 {
   font-size: 3rem;
-  line-height: 1;
   font-weight: 900;
-  color: rgb(255, 255, 255);
-  padding: 0;
-  margin: 0;
 }
 
 #introduction h2 span {
@@ -65,7 +61,6 @@
   color: rgba(255, 255, 255, 0.74);
   font-size: 1.2rem;
   font-weight: 300;
-  padding: 0;
   margin: 4rem 0;
 }
 

@@ -6,12 +6,12 @@
   background: #eee;
   padding: 2rem 0;
   text-align: center;
+  color: #000;
 }
 
 #contact h2 {
   font-size: 1.5rem;
   font-weight: 900;
-  color: #000;
 }
 
 #contact .content {

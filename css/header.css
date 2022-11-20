@@ -12,13 +12,12 @@ header {
   align-items: center;
 }
 
-header img {
+header svg {
   width: 2.5rem;
   margin-right: 1rem;
 }
 
 header h1 {
-  line-height: 1;
   padding-top: 0.25rem;
   font-size: inherit;
 }

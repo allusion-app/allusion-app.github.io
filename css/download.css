@@ -28,7 +28,6 @@
 
 #download .content > .fas {
   font-size: 5rem;
-  color: #fff;
   grid-area: 1 / 1 / 1 / 1;
   justify-self: center;
   align-self: center;
