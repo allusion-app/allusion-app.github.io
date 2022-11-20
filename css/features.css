@@ -132,19 +132,20 @@
 
 /* MOBILE VERSION */
 
-#features_mobile h1 {
+#features_mobile h2 {
   padding-bottom: 2rem;
   color: #ffffff;
+  text-align: center;
 }
 
-#features_mobile h2 {
+#features_mobile h3 {
   font-size: 1.25rem;
   line-height: 1.25;
   color: #666666;
   font-weight: 600;
 }
 
-#features_mobile .fListElement:target h2 {
+#features_mobile .fListElement:target h3 {
   color: #ffffff;
 }
 
@@ -165,10 +166,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-#features_mobile .fHeadline {
-  text-align: center;
 }
 
 #features_mobile .fCarousel {
@@ -212,11 +209,7 @@
   align-items: center;
 }
 
-#features_mobile .title {
-  min-height: rem;
-}
-
-#features_mobile .image_frame img {
+#features_mobile img {
   width: 100%;
 }
 
@@ -232,13 +225,13 @@
   justify-content: center;
 }
 
-#features_mobile .icon svg {
+#features_mobile svg {
   width: 3rem;
   margin: 0.5rem;
   fill: #666666;
 }
 
-#features_mobile .icon.active svg {
+#features_mobile svg.active {
   fill: #56c7df;
 }
 
@@ -261,7 +254,6 @@
 
 /* BREAKPOINTS */
 
-/* BREAKPOINTS */
 @media only screen and (max-width: 80rem) {
   #features {
     --page-width: 28rem;
