@@ -119,6 +119,14 @@ h5 {
   margin: 0;
 }
 
+button {
+  background: inherit;
+  color: inherit;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* COMPONENTS */
 
 .stdBtn {
