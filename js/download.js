@@ -1,14 +1,16 @@
-var windowsDownloadLink = document.getElementById('download-windows');
-var macDownloadLink = document.getElementById('download-mac');
-var linuxDownloadLink = document.getElementById('download-linux');
+"use strict";
+
+const windowsDownloadLink = document.getElementById('download-windows');
+const macDownloadLink = document.getElementById('download-mac');
+const linuxDownloadLink = document.getElementById('download-linux');
 
 highlightOSButton();
 setDownloadLinks();
 
 // Highlight download button for user's platform
 function highlightOSButton() {
-    var ua = navigator.userAgent;
-    var link;
+    const ua = navigator.userAgent;
+    let link;
     if (ua.indexOf('Win') !== -1) {
         link = windowsDownloadLink;
     } else if (ua.indexOf('Mac') !== -1) {

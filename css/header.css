@@ -1,10 +1,8 @@
-#navbar {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
+/**********/
+/* HEADER */
+/**********/
 
-.navbar {
+header {
   width: 100%;
   padding: 2rem 2rem 4rem 2rem;
   font-weight: bold;
@@ -13,17 +11,20 @@
   display: flex;
   align-items: center;
 }
-.navbar img {
+
+header img {
   width: 2.5rem;
   margin-right: 1rem;
 }
-.navbar span {
+
+header h1 {
   line-height: 1;
   padding-top: 0.25rem;
+  font-size: inherit;
 }
 
 @media (max-width: 1100px) {
-  .navbar {
+  header {
     justify-content: center;
   }
 }

@@ -1,3 +1,7 @@
+/****************/
+/* INTRODUCTION */
+/****************/
+
 #introduction {
   width: 100%;
   display: flex;
@@ -37,8 +41,8 @@
   display: block;
 }
 
-#introduction #title {
-  font-size: 3em;
+#introduction h2 {
+  font-size: 3rem;
   line-height: 1;
   font-weight: 900;
   color: rgb(255, 255, 255);
@@ -46,8 +50,8 @@
   margin: 0;
 }
 
-#introduction #subTitle {
-  font-size: 4em;
+#introduction h2 span {
+  font-size: 4rem;
   font-weight: 900;
   line-height: 1.25;
   background: linear-gradient(to right, rgb(77, 128, 224), rgb(22, 255, 146));
@@ -56,7 +60,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-#introduction #paragraph {
+#introduction p {
   max-width: 20rem;
   color: rgba(255, 255, 255, 0.74);
   font-size: 1.2rem;
@@ -93,9 +97,11 @@
 
 #introduction img {
   width: 100%;
+  height: auto;
 }
 
-#introduction .background {
+#introduction::after {
+  content: "";
   position: absolute;
   top: 5%;
   left: 35%;
@@ -135,23 +141,29 @@
   #introduction {
     text-align: center;
   }
+
   #introduction img {
     max-width: 30rem;
     margin: 2rem 0;
   }
-  #introduction p {
+
+  #introduction .text {
     max-width: 30rem;
   }
-  #introduction #paragraph {
+
+  #introduction p {
     margin: 2rem 0;
   }
+
   #introduction .c1 {
     flex: 0 0 100%;
     align-items: center;
   }
+
   #introduction .c2 {
     display: none;
   }
+
   #introduction .c1 .hero {
     display: block;
   }

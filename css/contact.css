@@ -7,6 +7,13 @@
   padding: 2rem 0;
   text-align: center;
 }
+
+#contact h2 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #000;
+}
+
 #contact .content {
   padding: 0 8vw 1rem 8vw;
 }
@@ -26,15 +33,23 @@
   min-width: 8rem;
   margin: 1rem 0.5rem;
   border-radius: 1rem;
-  cursor: pointer;
 }
+
 #contact .card:hover {
   background: #eee;
 }
+
 #contact .card .fas {
   color: #1473e6;
   font-size: 1.5rem;
 }
+
+#contact .card .name {
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
 #contact .break {
   display: none;
 }

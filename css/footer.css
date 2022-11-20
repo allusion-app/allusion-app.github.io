@@ -9,15 +9,15 @@ footer {
   display: flex;
   justify-content: center;
 }
+
 footer a {
   color: inherit;
-}
-footer .content {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-footer .content img {
+
+footer img {
   height: 1.5rem;
   width: auto;
   margin-right: 1rem;
