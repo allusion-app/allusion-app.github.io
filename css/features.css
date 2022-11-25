@@ -135,62 +135,15 @@
 #features_mobile h3 {
   font-size: 1.25rem;
   line-height: 1.25;
-  color: #666666;
   font-weight: 600;
 }
 
-#features_mobile .fListElement:target h3 {
-  color: #ffffff;
-}
-
 #features_mobile p {
-  color: #666666;
-}
-
-#features_mobile .fListElement:target p {
   color: #bbbbbb;
 }
 
 #features_mobile .page {
-  width: 100%;
-  height: 100vh;
-  max-height: 60rem;
-  overflow: hidden;
-  padding: 2rem 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#features_mobile .fCarousel {
-  max-width: 40rem;
-  overflow: hidden;
-}
-
-#features_mobile .fSlider {
-  
-  display: flex;
-  overflow: hidden;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-  padding: 0 20rem;
-}
-
-#features_mobile .fListElement {
-  flex: 0 0 20rem;
-  scroll-snap-align: center;
-  margin-right: 50px;
-  border-radius: 10px;
-  transform-origin: center center;
-  transform: scale(1);
-  transition: transform 0.5s;
-  position: relative;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 100px;
+  margin: 4rem 2rem;
 }
 
 #features_mobile .image_bg {
@@ -207,16 +160,35 @@
   width: 100%;
 }
 
-#features_mobile .navigation {
+.tabs {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
 }
 
-#features_mobile .row {
-  
+.tabs [role="tablist"] {
+  display: inline-flex;
+  order: 2;
+}
+
+.tabs [role="tab"] {
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.tabs .tabpanels {
   display: flex;
-  justify-content: center;
+  align-items: stretch;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  order: 1;
+}
+
+.tabs [role="tabpanel"] {
+  flex-grow: 0;
+  flex-shrink: 0;
+  max-width: 100%;
 }
 
 #features_mobile svg {
@@ -225,23 +197,21 @@
   fill: #666666;
 }
 
-#features_mobile svg.active {
+#features_mobile button[aria-selected="true"] svg {
   fill: #56c7df;
 }
 
 #features_mobile .scroll_track {
-  position: relative;
-  flex: 0 0 0.3rem;
   background-color: rgb(68, 68, 68);
+  height: 0.3rem;
+  width: 12rem;
   border-radius: 0.15rem;
+  order: 3;
 }
 
 #features_mobile .scroll_thumb {
-  position: absolute;
-  left: 40px;
-  right: 40px;
-  top: 0px;
-  bottom: 0px;
+  height: inherit;
+  width: 4rem;
   background-color: #56c7df;
   border-radius: 0.15rem;
 }

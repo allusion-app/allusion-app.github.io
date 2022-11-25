@@ -31,7 +31,7 @@
 
   <header>
     <!-- Allusion logo -->
-    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16">
+    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
       <defs>
         <linearGradient id="a" x1="3.5544" y1="13.79031" x2="12.06815" y2="7.05026" gradientUnits="userSpaceOnUse">
           <stop offset="0" stop-color="#147df1" />
@@ -408,230 +408,202 @@
         </div>
       </div>
     </div>
-
-    <script async src="js/features_accordion.js"></script>
   </section>
 
   <section id="features_mobile">
     <div class="page">
-      <h2>A great image organizer at the core</h2>
+      <h2 id="tablist_1">A great image organizer at the core</h2>
 
-      <div class="fCarousel">
-        <div class="fSlider">
-          <div id="f1" class="fListElement">
-            <div class="image_frame">
-              <div class="image_bg">
-                <img src="img/feature_1.png" alt="">
-              </div>
-              <h3>Watched folders</h3>
-              <p>
-                Allusion only needs to know where to look, and it will automatically load any content it finds at
-                the specified location. This makes it so that saving a picture to your set folder will automatically
-                add it to your library.
-              </p>
-            </div>
-          </div>
-
-          <div id="f2" class="fListElement active">
-            <div class="image_frame">
-              <div class="image_bg">
-                <img src="img/feature_2.png" alt="">
-              </div>
-              <h3>Import directly while browsing online</h3>
-              <p>
-                The Allusion browser extension for Google Chrome makes it easy to save images directly to your
-                visual library. You can even add tags without ever having to leave your browser.
-              </p>
-            </div>
-          </div>
-
-          <div id="f3" class="fListElement">
-            <div class="image_frame">
-              <div class="image_bg">
-                <img src="img/feature_3.png" alt="">
-              </div>
-              <h3>Your data remains in your control</h3>
-              <p>
-                Allusion is meant to be an interface between you and your data. You can save it to any folder you
-                want, where it will stay untouched.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="navigation">
-        <div class="row">
-          <button onclick="mobileScroll('f1')">
+      <div class="tabs">
+        <div role="tablist" aria-labelledby="tablist_1">
+          <button id="" role="tab" aria-controls="f1" aria-selected="false" onclick="mobileScroll('f1')">
             <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
               <use href="#icon_1" />
             </svg>
           </button>
-          <button onclick="mobileScroll('f2')">
-            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="active">
+          <button role="tab" aria-controls="f2" aria-selected="false" onclick="mobileScroll('f2')">
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
               <use href="#icon_2" />
             </svg>
           </button>
-          <button onclick="mobileScroll('f3')">
+          <button role="tab" aria-controls="f3" aria-selected="false" onclick="mobileScroll('f3')">
             <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
               <use href="#icon_3" />
             </svg>
           </button>
         </div>
+
         <div aria-hidden="true" class="scroll_track">
           <div class="scroll_thumb"></div>
         </div>
 
-      </div>
-
-    </div>
-    <div class="page">
-      <h2>An innovative approach to tagging</h2>
-
-      <div class="fCarousel">
-        <div class="fSlider">
-          <div id="f4" class="fListElement">
+        <div class="tabpanels">
+          <div role="tabpanel" id="f1" tabindex="0">
             <div class="image_frame">
-              <div class="image_bg">
-                <img src="img/feature_4.png" alt="">
-              </div>
-              <h3>Tag Hierarchy</h3>
-              <p>
-                Anyone who has used tags before knows that at some point the list gets so long that one forgets what
-                tags exist in the first place. This problem is entirely solved by managing tags in a hierarchy
-                instead.
-              </p>
+              <img src="img/feature_1.png" alt="">
             </div>
+            <h3>Watched folders</h3>
+            <p>
+              Allusion only needs to know where to look, and it will automatically load any content it finds at
+              the specified location. This makes it so that saving a picture to your set folder will automatically
+              add it to your library.
+            </p>
           </div>
 
-          <div id="f5" class="fListElement active">
+          <div role="tabpanel" id="f2" tabindex="0">
             <div class="image_frame">
-              <div class="image_bg">
-                <img src="img/feature_5.png" alt="">
-              </div>
-              <h3>Easily find any untagged content</h3>
-              <p>
-                With one click, you can easily bring up a list of all images that have no tags assigned to them yet.
-                This makes it so you never forget to tag an image again.
-              </p>
+              <img src="img/feature_2.png" alt="">
             </div>
+            <h3>Import directly while browsing online</h3>
+            <p>
+              The Allusion browser extension for Google Chrome makes it easy to save images directly to your
+              visual library. You can even add tags without ever having to leave your browser.
+            </p>
           </div>
 
-          <div id="f6" class="fListElement">
+          <div role="tabpanel" id="f3" tabindex="0">
             <div class="image_frame">
-              <div class="image_bg">
-                <img src="img/feature_6.png" alt="">
-              </div>
-              <h3>Colored labels</h3>
-              <p>
-                Custom colors on tags can be used to make them visually stand out. This is especially useful when
-                browsing through a long list of images.
-              </p>
+              <img src="img/feature_3.png" alt="">
             </div>
+            <h3>Your data remains in your control</h3>
+            <p>
+              Allusion is meant to be an interface between you and your data. You can save it to any folder you
+              want, where it will stay untouched.
+            </p>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="navigation">
-        <div class="row">
-          <button onclick="mobileScroll('f4')">
+    <div class="page">
+      <h2 id="tablist_2">An innovative approach to tagging</h2>
+
+      <div class="tabs">
+        <div role="tablist" aria-labelledby="tablist_2">
+          <button role="tab" aria-controls="f4" aria-selected="false" onclick="mobileScroll('f4')">
             <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
               <use href="#icon_4" />
             </svg>
           </button>
-          <button onclick="mobileScroll('f5')">
-            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="active">
+          <button role="tab" aria-controls="f5" aria-selected="false" onclick="mobileScroll('f5')">
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
               <use href="#icon_5" />
             </svg>
           </button>
-          <button onclick="mobileScroll('f6')">
+          <button role="tab" aria-controls="f6" aria-selected="false" onclick="mobileScroll('f6')">
             <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
               <use href="#icon_6" />
             </svg>
           </button>
         </div>
+
         <div aria-hidden="true" class="scroll_track">
           <div class="scroll_thumb"></div>
         </div>
 
-      </div>
-
-    </div>
-    <div class="page">
-      <h2>A powerful search</h2>
-
-      <div class="fCarousel">
-        <div class="fSlider">
-          <div id="f7" class="fListElement">
+        <div class="tabpanels">
+          <div role="tabpanel" id="f4" tabindex="0">
             <div class="image_frame">
-              <div class="image_bg">
-                <img src="img/feature_7.png" alt="">
-              </div>
-              <h3>Search for tags</h3>
-              <p>
-                The easiest way of finding an image is by typing the name of a tag into the search bar at the top. The
-                autocomplete feature lets you find tags even if you don't remember them clearly.
-              </p>
+              <img src="img/feature_4.png" alt="">
             </div>
+            <h3>Tag Hierarchy</h3>
+            <p>
+              Anyone who has used tags before knows that at some point the list gets so long that one forgets what
+              tags exist in the first place. This problem is entirely solved by managing tags in a hierarchy
+              instead.
+            </p>
           </div>
 
-          <div id="f8" class="fListElement active">
+          <div role="tabpanel" id="f5" tabindex="0">
             <div class="image_frame">
-              <div class="image_bg">
-                <img src="img/feature_8.png" alt="">
-              </div>
-              <h3>Searching from the outliner</h3>
-              <p>
-                Whether you are looking at the import locations or your tag hierarchy, a single click will let you
-                filter for any content that belongs to the entry.
-              </p>
+              <img src="img/feature_5.png" alt="">
             </div>
+            <h3>Easily find any untagged content</h3>
+            <p>
+              With one click, you can easily bring up a list of all images that have no tags assigned to them yet.
+              This makes it so you never forget to tag an image again.
+            </p>
           </div>
 
-          <div id="f9" class="fListElement">
+          <div role="tabpanel" id="f6" tabindex="0">
             <div class="image_frame">
-              <div class="image_bg">
-                <img src="img/feature_9.png" alt="">
-              </div>
-              <h3>Combine queries with the advanced search</h3>
-              <p>
-                Should the basic search not fulfill your needs, the advanced interface lets you combine queries to
-                find the most hidden image of your library.
-              </p>
+              <img src="img/feature_6.png" alt="">
             </div>
+            <h3>Colored labels</h3>
+            <p>
+              Custom colors on tags can be used to make them visually stand out. This is especially useful when
+              browsing through a long list of images.
+            </p>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="navigation">
-        <div class="row">
-          <button onclick="mobileScroll('f7')">
+    <div class="page">
+      <h2 id="tablist_3">A powerful search</h2>
+
+      <div class="tabs">
+        <div role="tablist" aria-labelledby="tablist_3">
+          <button role="tab" aria-controls="f7" aria-selected="false" onclick="mobileScroll('f7')">
             <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
               <use href="#icon_7" />
             </svg>
           </button>
-          <button onclick="mobileScroll('f8')">
-            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="active">
+          <button role="tab" aria-controls="f8" aria-selected="false" onclick="mobileScroll('f8')">
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
               <use href="#icon_8" />
             </svg>
           </button>
-          <button onclick="mobileScroll('f9')">
+          <button role="tab" aria-controls="f9" aria-selected="false" onclick="mobileScroll('f9')">
             <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
               <use href="#icon_9" />
             </svg>
           </button>
         </div>
+
         <div aria-hidden="true" class="scroll_track">
           <div class="scroll_thumb"></div>
         </div>
 
+        <div class="tabpanels">
+          <div role="tabpanel" id="f7" tabindex="0">
+            <div class="image_frame">
+              <img src="img/feature_7.png" alt="">
+            </div>
+            <h3>Search for tags</h3>
+            <p>
+              The easiest way of finding an image is by typing the name of a tag into the search bar at the top. The
+              autocomplete feature lets you find tags even if you don't remember them clearly.
+            </p>
+          </div>
+
+          <div role="tabpanel" id="f8" tabindex="0">
+            <div class="image_frame">
+              <img src="img/feature_8.png" alt="">
+            </div>
+            <h3>Searching from the outliner</h3>
+            <p>
+              Whether you are looking at the import locations or your tag hierarchy, a single click will let you
+              filter for any content that belongs to the entry.
+            </p>
+          </div>
+
+          <div role="tabpanel" id="f9" tabindex="0">
+            <div class="image_frame">
+              <img src="img/feature_9.png" alt="">
+            </div>
+            <h3>Combine queries with the advanced search</h3>
+            <p>
+              Should the basic search not fulfill your needs, the advanced interface lets you combine queries to
+              find the most hidden image of your library.
+            </p>
+          </div>
+        </div>
       </div>
-
     </div>
-
-    <script async src="js/features_tabs.js"></script>
   </section>
 
+  <script async src="js/features.js"></script>
 
   <section id="mockup">
     <h1>Features to fill you </br>with joy</h1>
