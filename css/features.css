@@ -206,6 +206,7 @@
   width: 4rem;
   background-color: #56c7df;
   border-radius: 0.15rem;
+  transition: transform 0.25s;
 }
 
 /* BREAKPOINTS */

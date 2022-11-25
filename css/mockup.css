@@ -86,7 +86,7 @@
 #mockup .box:hover p {
   color: #999999 !important;
 }
-#mockup .box:hover h2 {
+#mockup .box:hover h3 {
   color: #bebebe !important;
 }
 
@@ -96,13 +96,13 @@
   font-size: 0.9rem;
 }
 
-#mockup h2 {
+#mockup h3 {
   font-weight: 600;
   color: rgba(58, 58, 60, 1);
   font-size: 1.5rem;
 }
 
-#mockup h1 {
+#mockup h2 {
   padding-top: 5rem;
   padding-left: 5rem;
   padding-bottom: 3rem;
