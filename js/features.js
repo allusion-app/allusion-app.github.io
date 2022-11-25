@@ -43,7 +43,7 @@ function initAccordions() {
 
         // Measure container
         const nextheaderHeight = nextHeader.scrollHeight;
-        const nextContentHeight = nextContainer.firstElementChild.scrollHeight;
+        const nextContentHeight = nextContainer.scrollHeight;
 
         // Update state
         previousContainer.style.maxHeight = `${previousContainer.scrollHeight}px`;
