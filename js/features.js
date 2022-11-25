@@ -4,7 +4,7 @@
   const mediaQuery = window.matchMedia("only screen and (min-width: 36rem)");
 
   if (mediaQuery.matches) {
-    initAccordions;
+    requestAnimationFrame(initAccordions);
   } else {
     mediaQuery.addEventListener("change", initAccordions, { once: true })
   }
@@ -47,9 +47,7 @@ function initAccordions() {
 
         // Update state
         previousContainer.style.maxHeight = `${previousContainer.scrollHeight}px`;
-        previousHeader.dataset.expanded = FALSE;
         previousButton.setAttribute(ARIA_EXPANDED, FALSE);
-        nextHeader.dataset.expanded = TRUE;
         nextButton.setAttribute(ARIA_EXPANDED, TRUE);
         scrollThumb.style.height = `${nextheaderHeight + nextContentHeight}px`;
         scrollThumb.style.transform = `translateY(${nextheaderHeight * headerIndex}px)`;
@@ -74,7 +72,6 @@ function initAccordions() {
         scrollThumb.style.transform = "translateY(0px)";
         container.style.opacity = "1";
       } else {
-        header.dataset.expanded = FALSE;
         button.setAttribute(ARIA_EXPANDED, FALSE);
         container.style.opacity = "0";
         container.style.maxHeight = "0px";
