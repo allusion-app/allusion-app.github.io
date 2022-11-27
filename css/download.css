@@ -2,59 +2,82 @@
 /* DOWNLOAD */
 /************/
 
+#download {
+  background: linear-gradient(-45deg, #7af2a6 0.5%, #51b4cf 35%, #1473e6);
+  padding: 2rem 8vw 3rem 8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem 5rem;
+}
+
 #download h2 {
   font-size: 1.5rem;
   font-weight: 900;
 }
 
-#download .flexRow {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin: 1rem 0.5rem 0 0.5rem;
-}
-
-#download {
-  background: linear-gradient(-45deg, #7af2a6 0.5%, #51b4cf 35%, #1473e6);
-  padding: 2rem 0;
-}
-
-#download .content {
-  max-width: 80rem;
-  padding: 0 8vw 0.5rem 8vw;
-  display: grid;
-  grid-template-columns: 10rem auto;
-}
-
-#download .content > .fas {
+#download > .fas {
   font-size: 5rem;
-  grid-area: 1 / 1 / 1 / 1;
-  justify-self: center;
-  align-self: center;
 }
 
-#download .text {
-  grid-area: 1 / 2 / 1 / 2;
+#download .download__list {
+  display: flex;
+  gap: 1rem;
+}
+
+#download .text > * {
+  margin: 1rem;
+}
+
+[class^="download__link"] {
+  font-size: 0.875rem;
+  padding: 0.8rem 3.2rem;
+  border-radius: 2rem;
+  text-decoration: none;
+}
+
+.download__link {
+  font-weight: 600;
+  color: #1473e6;
+  background: #fff;
+  border: 0.125rem solid #fff;
+}
+
+.download__link:hover {
+  color: inherit;
+  background: transparent;
+}
+
+.download__link__strong {
+  color: #fff;
+  transition: background 0.25s ease;
+  background: linear-gradient(to right, rgb(77, 128, 224), rgb(22, 255, 146));
+}
+
+.download__link__strong:hover {
+  color: #fff;
+  background: #0c65d3;
+}
+
+#download .link {
+  color: inherit;
+}
+
+#download .link:hover {
+  color: #7af2a6;
 }
 
 @media only screen and (max-width: 840px) {
-  #download .content {
-    display: block;
+  #download {
+    flex-direction: column;
     text-align: center;
   }
 
-  #download .content > .fas {
+  #download > .fas {
     font-size: 3rem;
-    margin: 1rem;
   }
 
-  #download .flexRow {
-    margin: 2rem 0.5rem;
-    justify-content: center;
+  #download .download__list {
     flex-direction: column;
-  }
-
-  #download .stdBtn {
-    min-width: 18rem;
   }
 }

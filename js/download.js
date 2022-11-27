@@ -1,30 +1,23 @@
 "use strict";
 
-const windowsDownloadLink = document.getElementById('download-windows');
-const macDownloadLink = document.getElementById('download-mac');
-const linuxDownloadLink = document.getElementById('download-linux');
+(async function setupDownloadLinks() {
+    const windowsDownloadLink = document.getElementById('download-windows');
+    const macDownloadLink = document.getElementById('download-mac');
+    const linuxDownloadLink = document.getElementById('download-linux');
 
-highlightOSButton();
-setDownloadLinks();
-
-// Highlight download button for user's platform
-function highlightOSButton() {
+    // Highlight download button for user's platform
+    const LINK_CLASS = "download__link__strong";
     const ua = navigator.userAgent;
-    let link;
-    if (ua.indexOf('Win') !== -1) {
-        link = windowsDownloadLink;
-    } else if (ua.indexOf('Mac') !== -1) {
-        link = macDownloadLink;
-    } else if (ua.indexOf('Linux') !== -1) {
-        link = linuxDownloadLink;
-    }
-    if (link) {
-        link.classList.remove('alt');
-        link.classList.add('strong');
-    }
-}
 
-async function setDownloadLinks() {
+    if (ua.indexOf("Win") !== -1) {
+        windowsDownloadLink.className = LINK_CLASS;
+    } else if (ua.indexOf("Mac") !== -1) {
+        macDownloadLink.className = LINK_CLASS;
+    } else if (ua.indexOf("Linux") !== -1) {
+        linuxDownloadLink.className = LINK_CLASS;
+    }
+
+    // Set actual link targets to executables
     const response = await fetch('https://api.github.com/repos/allusion-app/Allusion/releases/latest', {
         method: 'GET',
         headers: {
@@ -45,4 +38,4 @@ async function setDownloadLinks() {
             }
         }
     }
-}
+})();

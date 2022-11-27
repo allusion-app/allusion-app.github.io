@@ -66,6 +66,7 @@
 
 #introduction .row {
   display: flex;
+  align-items: center;
 }
 
 #introduction .round-button {

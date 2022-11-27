@@ -8,22 +8,21 @@
   font-family: "Lato";
   font-weight: 400;
   font-display: swap;
-  src: local("Lato Regular"),
-    url(../fonts/Lato/Lato-Regular.ttf) format("truetype");
+  src: local("Lato Regular"), url(../fonts/Lato/Lato-Regular.woff) format("woff");
 }
 
 @font-face {
   font-family: "Lato";
   font-weight: 600;
   font-display: swap;
-  src: local("Lato Bold"), url(../fonts/Lato/Lato-Bold.ttf) format("truetype");
+  src: local("Lato Bold"), url(../fonts/Lato/Lato-Bold.woff) format("woff");
 }
 
 @font-face {
   font-family: "Lato";
   font-weight: 900;
   font-display: swap;
-  src: local("Lato Black"), url(../fonts/Lato/Lato-Black.ttf) format("truetype");
+  src: local("Lato Black"), url(../fonts/Lato/Lato-Black.woff) format("woff");
 }
 
 * {
@@ -70,21 +69,9 @@ a {
   margin: 0;
   text-underline-offset: 0.125rem;
 }
+
 a:hover {
   color: #489aff;
-}
-a.alt:hover {
-  color: #7af2a6;
-}
-a.stdBtn,
-a.card,
-header a,
-footer a {
-  text-decoration: none;
-}
-
-.alt {
-  color: #fff;
 }
 
 h1,
@@ -93,52 +80,17 @@ h3,
 h4,
 h5,
 h6 {
-  padding: 0;
   margin: 0;
   line-height: 1;
 }
-
 
 button {
   background: inherit;
   border: none;
   color: inherit;
+  line-height: inherit;
   font-family: inherit;
-  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
   padding: 0;
-}
-
-/* COMPONENTS */
-
-.stdBtn {
-  font-size: 0.875rem;
-  cursor: pointer;
-  margin: 0.5rem;
-  padding: 0.8rem 3.2rem;
-  border-radius: 2rem;
-  outline: none;
-
-  transition: background 0.25s ease;
-}
-.stdBtn.strong {
-  color: #fff;
-  background: linear-gradient(to right, rgb(77, 128, 224), rgb(22, 255, 146));
-}
-.stdBtn.alt {
-  font-weight: 600;
-  color: #1473e6;
-  background: #fff;
-  border: 0.125rem solid #fff;
-  transition: none;
-}
-.stdBtn.strong:hover {
-  background: #0c65d3;
-}
-.stdBtn.alt:hover {
-  color: #fff;
-  background: transparent;
-}
-
-.stdMargin {
-  margin: 1rem;
 }

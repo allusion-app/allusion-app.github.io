@@ -3,10 +3,14 @@
 /***********/
 
 #contact {
-  background: #eee;
-  padding: 2rem 0;
+  background: #f4f4f4;
+  padding: 2rem 8vw 3rem 8vw;
   text-align: center;
   color: #000;
+}
+
+#contact > * {
+  margin: 1rem;
 }
 
 #contact h2 {
@@ -14,50 +18,32 @@
   font-weight: 900;
 }
 
-#contact .content {
-  padding: 0 8vw 1rem 8vw;
-}
-
-#contact .cardWrapper {
+.cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-#contact .cardWrapper a {
+.cards__item {
   color: inherit;
-}
-
-#contact .card {
+  text-decoration: none;
   padding: 1rem;
   min-width: 8rem;
   margin: 1rem 0.5rem;
   border-radius: 1rem;
 }
 
-#contact .card:hover {
+.cards__item:hover {
   background: #eee;
 }
 
-#contact .card .fas {
+.cards .fas {
   color: #1473e6;
   font-size: 1.5rem;
 }
 
-#contact .card .name {
+.cards__name {
   font-size: 1rem;
   font-weight: 900;
   line-height: 1;
-}
-
-#contact .break {
-  display: none;
-}
-
-@media only screen and (max-width: 840px) {
-  #contact .break {
-    display: block;
-    flex-basis: 100%;
-    height: 0;
-  }
 }

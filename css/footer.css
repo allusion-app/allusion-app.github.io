@@ -14,10 +14,10 @@ footer a {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
 
-footer img {
-  height: 1.5rem;
-  width: auto;
+footer svg {
+  width: 1.5rem;
   margin-right: 1rem;
 }
