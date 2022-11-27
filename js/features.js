@@ -83,7 +83,7 @@ function initAccordions() {
         "transitionend",
         function handleTransitionEnd() {
           if (expandedHeader === headerIndex) {
-            const container = scrollThumb.parentElement;
+            const container = this.parentElement;
             const header = this.previousElementSibling;
             const offset = Math.round(header.getBoundingClientRect().y - container.getBoundingClientRect().y);
 
