@@ -58,15 +58,12 @@ body {
 p {
   font-size: 1rem;
   font-weight: 400;
-  padding: 0;
   margin: 0;
 }
 
 a {
   color: #1473e6;
   font-weight: 600;
-  padding: 0;
-  margin: 0;
   text-underline-offset: 0.125rem;
 }
 
@@ -93,4 +90,34 @@ button {
   font-size: inherit;
   font-weight: inherit;
   padding: 0;
+}
+
+[class^="button"] {
+  font-size: 0.875rem;
+  padding: 0.8rem 3.2rem;
+  border-radius: 2rem;
+  text-decoration: none;
+}
+
+.button {
+  font-weight: 600;
+  color: #1473e6;
+  background: #fff;
+  box-shadow: 0 0 0 0.125rem #fff inset;
+}
+
+.button:hover {
+  color: #fff;
+  background: transparent;
+}
+
+.button_strong {
+  color: #fff;
+  transition: background 0.25s ease;
+  background: linear-gradient(to right, rgb(77, 128, 224), rgb(22, 255, 146));
+}
+
+.button_strong:hover {
+  color: #fff;
+  background: #0c65d3;
 }

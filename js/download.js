@@ -6,7 +6,7 @@
     const linuxDownloadLink = document.getElementById('download-linux');
 
     // Highlight download button for user's platform
-    const LINK_CLASS = "download__link__strong";
+    const LINK_CLASS = "button_strong";
     const ua = navigator.userAgent;
 
     if (ua.indexOf("Win") !== -1) {
