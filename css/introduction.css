@@ -2,51 +2,32 @@
 /* INTRODUCTION */
 /****************/
 
-#introduction {
+.introduction {
   width: 100%;
   display: flex;
   justify-content: center;
   border-bottom: 0.125rem solid rgba(0, 0, 0, 0.2);
 }
 
-#introduction .parent {
+.introduction__content {
   max-width: 80rem;
-  display: flex;
-  flex-wrap: nowrap;
-  padding: 0 2rem 4rem 2rem;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  padding: 0 3rem 4rem 3rem;
+  gap: 4rem 2rem;
 }
 
-#introduction .c1 {
-  flex: 0 0 40%;
-  overflow: hidden;
-  padding: 0 1rem;
-  display: flex;
-  flex-direction: column;
+.introduction__picture {
+  grid-row: 1 / span 3;
+  grid-column: 2;
 }
 
-#introduction .c2 {
-  flex: 1 1 60%;
-  overflow: hidden;
-  padding: 0 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#introduction .c1 .hero {
-  display: none;
-}
-
-#introduction .c2 .hero {
-  display: block;
-}
-
-#introduction h2 {
+.introduction__heading {
   font-size: 3rem;
   font-weight: 900;
 }
 
-#introduction h2 span {
+.introduction__heading_strong {
   font-size: 4rem;
   font-weight: 900;
   line-height: 1.25;
@@ -56,20 +37,18 @@
   -webkit-text-fill-color: transparent;
 }
 
-#introduction p {
-  max-width: 20rem;
+.introduction__text {
   color: rgba(255, 255, 255, 0.74);
   font-size: 1.2rem;
   font-weight: 300;
-  margin: 4rem 0;
 }
 
-#introduction .row {
+.introduction__actions {
   display: flex;
   align-items: center;
 }
 
-#introduction .round-button {
+.introduction__play {
   font-size: 0.5rem;
   text-decoration: none;
   width: 3rem;
@@ -85,18 +64,18 @@
   justify-content: center;
 }
 
-#introduction .round-button:hover {
+.introduction__play:hover {
   background-color: rgba(0, 0, 0, 0.8);
   box-shadow: 0px 0px 10px rgb(34, 255, 163);
   text-shadow: 0px 0px 10px rgb(56, 255, 162);
 }
 
-#introduction img {
+.introduction img {
   width: 100%;
   height: auto;
 }
 
-#introduction::after {
+.introduction::after {
   content: "";
   position: absolute;
   top: 5%;
@@ -134,33 +113,19 @@
 /* --------------- */
 
 @media (max-width: 1100px) {
-  #introduction {
+  .introduction__content {
+    max-width: 30rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
     text-align: center;
   }
 
-  #introduction img {
-    max-width: 30rem;
-    margin: 2rem 0;
+  .introduction__picture {
+    grid-column: auto;
+    grid-row: auto;
   }
 
-  #introduction .text {
-    max-width: 30rem;
-  }
-
-  #introduction p {
-    margin: 2rem 0;
-  }
-
-  #introduction .c1 {
-    flex: 0 0 100%;
-    align-items: center;
-  }
-
-  #introduction .c2 {
-    display: none;
-  }
-
-  #introduction .c1 .hero {
-    display: block;
+  .introduction__actions {
+    justify-content: center;
   }
 }
