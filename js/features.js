@@ -55,12 +55,15 @@ function initAccordions() {
         scrollThumb.style.transform = `translateY(${nextheaderHeight * headerIndex}px)`;
 
         // Trigger expansion animation
-        requestAnimationFrame(() => {
-          previousContainer.style.maxHeight = "0px";
-          previousContainer.style.opacity = "0";
-          nextContainer.style.maxHeight = `${nextContentHeight}px`;
-          nextContainer.style.opacity = "1";
-        });
+        requestAnimationFrame(() =>
+          // Calling requestAnimationFrame inside another ensures that the callback is only executed in the next frame.
+          requestAnimationFrame(() => {
+            previousContainer.style.maxHeight = "0px";
+            previousContainer.style.opacity = "0";
+            nextContainer.style.maxHeight = `${nextContentHeight}px`;
+            nextContainer.style.opacity = "1";
+          })
+        );
       };
 
       const button = header.firstElementChild;
