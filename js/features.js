@@ -1,16 +1,18 @@
 "use strict";
 
-{
-  const mediaQuery = window.matchMedia("only screen and (min-width: 36rem)");
+// {
+//   const mediaQuery = window.matchMedia("only screen and (min-width: 36rem)");
 
-  if (mediaQuery.matches) {
-    requestAnimationFrame(initAccordions);
-    mediaQuery.addEventListener("change", initTabs, { once: true });
-  } else {
-    requestAnimationFrame(initTabs);
-    mediaQuery.addEventListener("change", initAccordions, { once: true });
-  }
-}
+//   if (mediaQuery.matches) {
+//     requestAnimationFrame(initAccordions);
+//     mediaQuery.addEventListener("change", initTabs, { once: true });
+//   } else {
+//     requestAnimationFrame(initTabs);
+//     mediaQuery.addEventListener("change", initAccordions, { once: true });
+//   }
+// }
+
+requestAnimationFrame(initAccordions);
 
 function initAccordions() {
   const ARIA_EXPANDED = "aria-expanded";
