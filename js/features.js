@@ -69,8 +69,8 @@ function initAccordions() {
       };
 
       const button = header.firstElementChild;
-      button.addEventListener("focus", expandHeader, { capture: true });
-      button.addEventListener("pointerenter", expandHeader, { capture: true });
+      button.addEventListener("click", expandHeader, { capture: true });
+      button.addEventListener("mouseenter", expandHeader, { capture: true });
 
       const container = header.nextElementSibling;
 

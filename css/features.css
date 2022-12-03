@@ -2,86 +2,59 @@
 /* FEATURES */
 /************/
 
-#features {
+.features {
   --icon-color: #56c7df;
   --animation-duration: 0.25s;
 
-  --page-width: 72rem;
-  --page-split-point: 30rem;
-  --page-gap: 8rem;
-  --placement-width: var(--page-split-point);
-  --placement-reversed: unset;
-  --image-frame-top: 0;
-  --image-frame-left: var(--page-split-point);
-  --image-frame-right: 0;
-  --image-frame-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem 0;
+  padding: 4rem 0;
 }
 
-#features h2 {
-  grid-column: 1 / span 2;
-  font-size: 2.5rem;
+.features__heading {
+  grid-area: heading;
   font-weight: 600;
+  text-align: center;
 }
 
-#features h3 {
-  font-size: 1.25rem;
-  line-height: 1.25;
-  font-weight: 600;
-}
-
-#features .page {
-  position: relative;
-  max-width: var(--page-width);
-  margin: var(--page-gap) auto;
-}
-
-#features .page:nth-of-type(1) {
-  margin-top: calc(var(--page-gap) - 4rem);
-}
-
-#features .page:nth-last-of-type(even) {
-  --image-frame-left: 0;
-  --image-frame-right: var(--page-split-point);
-  --placement-reversed: auto;
-}
-
-#features .placement {
+.features__content {
   display: grid;
   grid-template-columns: 0.3rem 1fr;
+  grid-template-areas:
+      ". ."
+      "heading heading"
+      "scroll-track accordion";
   gap: 2rem 1rem;
-  max-width: var(--placement-width);
-  padding: 0 2rem;
-  margin-left: var(--placement-reversed);
+  padding: 0 1rem;
 }
 
-#features .image_frame {
-  position: absolute;
-  top: var(--image-frame-top);
-  left: var(--image-frame-left);
-  right: var(--image-frame-right);
-  height: var(--image-frame-height);
+.features__image-frame {
+  height: 10rem;
   padding: 2rem;
   overflow: hidden;
   border-radius: 0.5rem;
   background-color: rgba(0, 0, 0, 0.25);
 }
 
-#features img {
+.features img {
   width: 100%;
   height: auto;
 }
 
-#features p {
+.features p {
   color: #bbbbbb;
   padding-bottom: 1rem;
 }
 
-#features .scroll_track {
+.features__scroll-track {
+  grid-area: scroll-track;
   background: rgb(68, 68, 68);
   border-radius: 0.15rem;
 }
 
-#features .scroll_thumb {
+.features__scroll-thumb {
   border-radius: inherit;
   transition-property: transform, height;
   transition-duration: var(--animation-duration);
@@ -89,6 +62,15 @@
 }
 
 /* ACCORDION COMPONENT */
+
+.accordion {
+  grid-area: accordion;
+}
+
+.accordion__header {
+  line-height: 1.25;
+  font-weight: 600;
+}
 
 .accordion__control {
   text-align: start;
@@ -118,34 +100,61 @@
 
 /* BREAKPOINTS */
 
-@media only screen and (max-width: 80rem) {
-  #features {
-    --page-width: 30rem;
-    --page-gap: 20rem;
-    --image-frame-top: -12rem;
-    --image-frame-left: 0;
-    --image-frame-right: 0;
-    --image-frame-height: 10rem;
-    --placement-width: 100%;
-    --placement-reversed: unset;
+@media only screen and (min-width: 36rem) {
+  .features {
+    gap: 8rem 0;
   }
 
-  #features h2 {
-    text-align: center;
+  .features__content {
+    position: relative;
+    width: 30rem;
+    padding: 0 2rem;
+    grid-template-rows: 10rem min-content min-content;
   }
 
-  #features .page:nth-last-of-type(even) {
-    --image-frame-right: 0;
-    --placement-reversed: unset;
+  .features__heading {
+    font-size: 2.5rem;
+  }
+
+  .features__image-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .accordion__header {
+    font-size: 1.25rem;
   }
 }
 
-@media only screen and (max-width: 36rem) {
-  #features .image_frame {
-    position: static;
+@media only screen and (min-width: 80rem) {
+  .features__content {
+    --image-frame-left: 30rem;
+    --image-frame-right: 0;
+
+    width: 72rem;
+    grid-template-columns: 0.3rem 1fr 42rem;
+    grid-template-rows: auto;
   }
 
-  #features .placement {
-    padding: 0 1rem;
+  .features__content:nth-of-type(even) {
+    --image-frame-left: 0;
+    --image-frame-right: 30rem;
+
+    grid-template-columns: 42rem 0.3rem 1fr;
+    grid-template-areas:
+      ". heading heading"
+      ". scroll-track accordion";
+  }
+
+  .features__heading {
+    text-align: initial;
+  }
+
+  .features__image-frame {
+    left: var(--image-frame-left);
+    right: var(--image-frame-right);
+    height: 100%;
   }
 }

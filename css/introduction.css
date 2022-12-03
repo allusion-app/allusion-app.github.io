@@ -3,7 +3,6 @@
 /****************/
 
 .introduction {
-  width: 100%;
   display: flex;
   justify-content: center;
   border-bottom: 0.125rem solid rgba(0, 0, 0, 0.2);
@@ -13,7 +12,7 @@
   max-width: 80rem;
   display: grid;
   grid-template-columns: 2fr 3fr;
-  padding: 0 3rem 4rem 3rem;
+  padding: 0 2rem 4rem 2rem;
   gap: 4rem 2rem;
 }
 
@@ -32,9 +31,9 @@
   font-weight: 900;
   line-height: 1.25;
   background: linear-gradient(to right, rgb(77, 128, 224), rgb(22, 255, 146));
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .introduction__text {
@@ -80,7 +79,7 @@
   position: absolute;
   top: 5%;
   left: 35%;
-  z-index: -100;
+  z-index: -1;
   width: 800px;
   height: 800px;
   border-radius: 25rem;
@@ -117,15 +116,12 @@
     max-width: 30rem;
     grid-template-columns: 1fr;
     gap: 2rem;
+    justify-items: center;
     text-align: center;
   }
 
   .introduction__picture {
     grid-column: auto;
     grid-row: auto;
-  }
-
-  .introduction__actions {
-    justify-content: center;
   }
 }
