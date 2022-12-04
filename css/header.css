@@ -4,7 +4,8 @@
 
 header {
   width: 100%;
-  padding: 2rem 2rem 4rem 2rem;
+  padding: 2rem;
+  padding-bottom: 0;
   font-weight: bold;
   font-size: 30px;
   color: #fafcfd;

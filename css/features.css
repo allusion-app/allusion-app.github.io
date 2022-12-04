@@ -9,8 +9,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem 0;
-  padding: 4rem 0;
+  gap: 8rem 0;
 }
 
 .features__heading {
@@ -20,14 +19,13 @@
 }
 
 .features__content {
+  width: 100%;
   display: grid;
   grid-template-columns: 0.3rem 1fr;
   grid-template-areas:
-      ". ."
       "heading heading"
       "scroll-track accordion";
   gap: 2rem 1rem;
-  padding: 0 1rem;
 }
 
 .features__image-frame {
@@ -36,11 +34,6 @@
   overflow: hidden;
   border-radius: 0.5rem;
   background-color: rgba(0, 0, 0, 0.25);
-}
-
-.features img {
-  width: 100%;
-  height: auto;
 }
 
 .features p {
@@ -101,15 +94,14 @@
 /* BREAKPOINTS */
 
 @media only screen and (min-width: 36rem) {
-  .features {
-    gap: 8rem 0;
-  }
-
   .features__content {
     position: relative;
-    width: 30rem;
-    padding: 0 2rem;
+    max-width: 30rem;
     grid-template-rows: 10rem min-content min-content;
+    grid-template-areas:
+      ". ."
+      "heading heading"
+      "scroll-track accordion";
   }
 
   .features__heading {
@@ -120,7 +112,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
   }
 
   .accordion__header {
@@ -130,19 +121,22 @@
 
 @media only screen and (min-width: 80rem) {
   .features__content {
-    --image-frame-left: 30rem;
+    --image-frame-left: 32.3rem;
     --image-frame-right: 0;
 
-    width: 72rem;
-    grid-template-columns: 0.3rem 1fr 42rem;
+    max-width: 80rem;
+    grid-template-columns: 0.3rem 30rem 1fr;
     grid-template-rows: auto;
+    grid-template-areas:
+      "heading heading ."
+      "scroll-track accordion .";
   }
 
   .features__content:nth-of-type(even) {
     --image-frame-left: 0;
-    --image-frame-right: 30rem;
+    --image-frame-right: 32.3rem;
 
-    grid-template-columns: 42rem 0.3rem 1fr;
+    grid-template-columns: 1fr 0.3rem 30rem;
     grid-template-areas:
       ". heading heading"
       ". scroll-track accordion";

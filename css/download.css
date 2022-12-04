@@ -4,11 +4,8 @@
 
 .download {
   background: linear-gradient(-45deg, #7af2a6 0.5%, #51b4cf 35%, #1473e6);
-  padding: 2rem 8vw 3rem 8vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem 5rem;
+  align-items: stretch;
+  text-align: center;
 }
 
 .download__heading {
@@ -17,16 +14,13 @@
 }
 
 .download__icon {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .download__list {
   display: flex;
+  flex-direction: column;
   gap: 1rem;
-}
-
-.download__content > * {
-  margin: 1rem;
 }
 
 .download__link {
@@ -37,17 +31,21 @@
   color: #7af2a6;
 }
 
-@media only screen and (max-width: 840px) {
+@media only screen and (min-width: 840px) {
   .download {
-    flex-direction: column;
-    text-align: center;
+    display: grid;
+    grid-template-columns: min-content max-content;
+    gap: 1rem 5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: initial;
   }
 
   .download__icon {
-    font-size: 3rem;
+    grid-row: 1 / span 4;
   }
 
   .download__list {
-    flex-direction: column;
+    flex-direction: row;
   }
 }

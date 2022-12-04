@@ -31,8 +31,6 @@
   text-align: center;
   transition: transform 0.4s;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  user-select: none;
-  cursor: pointer;
 }
 #carousel .features .item h1 {
   font-size: 114px;

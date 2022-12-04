@@ -4,13 +4,8 @@
 
 .contact {
   background: #f4f4f4;
-  padding: 2rem 8vw 3rem 8vw;
   text-align: center;
   color: #000;
-}
-
-.contact > * {
-  margin: 1rem;
 }
 
 .contact__heading {

@@ -28,7 +28,6 @@
 </head>
 
 <body>
-
   <header>
     <!-- Allusion logo -->
     <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
@@ -47,15 +46,15 @@
   </header>
 
 
-  <section class="introduction">
-    <div class="introduction__content">
+  <section class="column introduction">
+    <div class="column introduction__content">
       <h2 class="introduction__heading">
         Unleash your<br><span class="introduction__heading_strong">Creativity</span>
       </h2>
+      <!-- THIS ART IS TEMPORARY - THE IMAGES SHOWN ON THE UI NEED TO BE REPLACED BEFORE PUBLISHING -->
       <picture class="introduction__picture">
         <img class="hero" alt="" src="img/hero_2.png" width="2200" height="1500">
       </picture>
-      <!-- THIS ART IS TEMPORARY - THE IMAGES SHOWN ON THE UI NEED TO BE REPLACED BEFORE PUBLISHING -->
       <p class="introduction__text">
         Never lose another reference. Allusion helps artists manage their collections of reference images and
         inspirations.
@@ -69,8 +68,8 @@
     </div>
   </section>
 
-  <section class="features">
 
+  <section class="column features">
     <!-- Placement within section -->
     <div class="features__content">
       <!-- Header -->
@@ -81,7 +80,6 @@
       </div>
       <!-- Accordion -->
       <div class="accordion">
-
         <h3 class="accordion__header">
           <button id="accordion_control_1" class="accordion__control" aria-controls="accordion_panel_1" aria-expanded="true">
             <svg class="accordion__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
@@ -165,7 +163,6 @@
       </div>
       <!-- Accordion -->
       <div class="accordion">
-
         <h3 class="accordion__header">
           <button id="accordion_control_4" class="accordion__control" aria-controls="accordion_panel_4" aria-expanded="true">
             <svg class="accordion__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
@@ -253,7 +250,6 @@
       </div>
       <!-- Accordion -->
       <div class="accordion">
-
         <h3 class="accordion__header">
           <button id="accordion_control_7" class="accordion__control" aria-controls="accordion_panel_7" aria-expanded="true">
             <svg class="accordion__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
@@ -340,7 +336,7 @@
   </section>
 
 
-  <section class="mockup">
+  <section class="column mockup">
     <h2 class="mockup__heading">Features to fill you <br>with joy</h2>
     <div class="mockup__content">
       <div aria-hidden="true" class="mockup__toolbar">
@@ -452,7 +448,7 @@
     </div>
   </section>
 
-  <section id="carousel">
+  <section id="carousel" class="column">
     <div class="slider">
       <input type="radio" name="feature" id="t-1" checked>
       <input type="radio" name="feature" id="t-2">
@@ -494,36 +490,32 @@
   </section>
 
 
-  <section id="download" class="download">
+  <section id="download" class="column download">
     <span aria-hidden="true" class="download__icon fas fa-download"></span>
-    <div class="download__content">
-      <h2 class="download__heading">Get Allusion</h2>
-      <p>
-        Allusion is available for Windows, MacOS and Linux. You can download it through the links below.
-      </p>
-      <div class="download__list">
-        <a class="button" id="download-windows" href="https://github.com/allusion-app/Allusion/releases/latest">
-          Allusion for Windows
-        </a>
-        <a class="button" id="download-mac" href="https://github.com/allusion-app/Allusion/releases/latest">
-          Allusion for MacOS
-        </a>
-        <a class="button" id="download-linux" href="https://github.com/allusion-app/Allusion/releases/latest">
-          Allusion for Linux
-        </a>
-      </div>
-      <small>
-        <span aria-hidden="true" class="fas fa-info-circle"></span> Not what you're looking for? Check out our <a
-          class="download__link" href="https://github.com/allusion-app/Allusion/releases/latest">releases page</a> or
-        send us a <a class="download__link" href="mailto:allusion.app@gmail.com">message</a>!
-      </small>
+    <h2 class="download__heading">Get Allusion</h2>
+    <p>Allusion is available for Windows, MacOS and Linux. You can download it through the links below.</p>
+    <div class="download__list">
+      <a class="button" id="download-windows" href="https://github.com/allusion-app/Allusion/releases/latest">
+        Allusion for Windows
+      </a>
+      <a class="button" id="download-mac" href="https://github.com/allusion-app/Allusion/releases/latest">
+        Allusion for MacOS
+      </a>
+      <a class="button" id="download-linux" href="https://github.com/allusion-app/Allusion/releases/latest">
+        Allusion for Linux
+      </a>
     </div>
-
+    <small>
+      <span aria-hidden="true" class="fas fa-info-circle"></span> Not what you're looking for? Check out our <a
+        class="download__link" href="https://github.com/allusion-app/Allusion/releases/latest">releases page</a> or send
+      us a <a class="download__link" href="mailto:allusion.app@gmail.com">message</a>!
+    </small>
+  
     <script async src="js/download.js"></script>
   </section>
 
 
-  <section class="contact">
+  <section class="column contact">
     <h2 class="contact__heading">Meet the Team!</h2>
     <div class="contact__list">
       <a class="contact__item" href="https://twitter.com/dani_kreuter">
@@ -571,7 +563,6 @@
     </svg>
     Allusion
   </footer>
-
 </body>
 
 </html>
